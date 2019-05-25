@@ -1,4 +1,6 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Home from '../components/Home.jsx';
 
 class Main extends React.Component {
     constructor(props) {
@@ -11,7 +13,14 @@ class Main extends React.Component {
 
     render() {
         return (
-            <p> Hello World </p>
+            <div>
+                <div style={{height: '50px', width: '100%', backgroundColor: 'grey', color: 'white'}} id="header">
+                    Header
+                </div>
+                <Switch>
+                    <Route path="/" component={Home} />
+                </Switch>
+            </div>
         )
     }
 }
