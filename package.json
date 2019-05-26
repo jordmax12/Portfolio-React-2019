@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "webpack": "npx webpack -w"
+    "webpack": "npx webpack -w",
+    "heroku-postbuild": "webpack -p"
   },
   "author": "Jordan Max",
   "license": "ISC",
@@ -20,7 +21,8 @@
     "react-dom": "^16.8.6",
     "react-particles-js": "^2.6.0",
     "react-router-dom": "^5.0.0",
-    "react-typed": "^1.1.2"
+    "react-typed": "^1.1.2",
+    "webpack": "^4.20.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
@@ -44,8 +46,7 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.10",
     "css-loader": "^1.0.0",
     "style-loader": "^0.23.1",
-    "webpack": "^4.20.2",
     "webpack-bundle-analyzer": "^3.3.2",
-    "webpack-cli": "^3.1.1"
+    "webpack-cli": "^3.3.2"
   }
 }

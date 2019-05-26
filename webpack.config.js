@@ -14,7 +14,7 @@ let config = {
     './client-src/app.js'
   ],
   output: {
-    path: __dirname + '/views/assets',
+    path: __dirname + '/dist',
     publicPath: '/',
     filename: 'main.js'
   },
