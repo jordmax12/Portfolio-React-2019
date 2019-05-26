@@ -13,6 +13,7 @@ const wrapper = `<html>
     <div id="app"></div>      
 </body>
 <script src="/main.js"></script>
+<script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
 </html>`
 
 module.exports = {wrapper}

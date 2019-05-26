@@ -14,9 +14,9 @@ class Main extends React.Component {
     render() {
         return (
             <div>
-                <div style={{height: '50px', width: '100%', backgroundColor: 'grey', color: 'white'}} id="header">
+                {/* <div style={{height: '50px', width: '100%', backgroundColor: 'grey', color: 'white'}} id="header">
                     Header
-                </div>
+                </div> */}
                 <Switch>
                     <Route path="/" component={Home} />
                 </Switch>
