@@ -30,12 +30,16 @@ class Home extends React.Component {
                         </span>
                     </div>
                     <div style={{ color: 'white', textAlign: 'center' }}>
-                        <p> This is a&nbsp;
+                        <p> Jordan is a&nbsp;
                         <Typed
                                 strings={[
-                                    'test',
-                                    'tset',
-                                    'Test']}
+                                    'Software Engineer.',
+                                    'Full Stack Web Developer.',
+                                    'Mobile App Developer.',
+                                    'ReactJS Developer.',
+                                    'Gamer.',
+                                    'Blackhawks/Bulls/Whitesox fan.',
+                                    'Animal lover.']}
                                 typeSpeed={40}
                                 backSpeed={50}
                                 ref="typedTarget"
