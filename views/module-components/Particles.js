@@ -66,7 +66,7 @@ class ParticlesComponent extends React.Component {
                             "line_linked": {
                                 "enable": false,
                                 "distance": 500,
-                                "color": "#ffffff",
+                                "color": "#23e7ff",
                                 "opacity": 0.4,
                                 "width": 2
                             },
@@ -88,10 +88,10 @@ class ParticlesComponent extends React.Component {
                         "interactivity": {
                             "detect_on": "canvas",
                             "events": {
-                                // "onhover": {
-                                //     "enable": true,
-                                //     "mode": "bubble"
-                                // },
+                                "onhover": {
+                                    "enable": true,
+                                    "mode": "grab"
+                                },
                                 // "onclick": {
                                 //     "enable": true,
                                 //     "mode": "repulse"
@@ -100,9 +100,9 @@ class ParticlesComponent extends React.Component {
                             },
                             "modes": {
                                 "grab": {
-                                    "distance": 400,
+                                    "distance": 150,
                                     "line_linked": {
-                                        "opacity": 0.5
+                                        "opacity": 0.5,
                                     }
                                 },
                                 "bubble": {
