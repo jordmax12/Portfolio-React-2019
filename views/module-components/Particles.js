@@ -127,7 +127,7 @@ class ParticlesComponent extends React.Component {
                     }} />
 
                 </div>
-                <div style={{ width: 'auto', marginLeft: 'auto', marginRight: 'auto', position: 'absolute', top: '50%', right: 0, left: 0, margin: '0 auto' }}>
+                <div id="headerMarker" style={{ width: 'auto', marginLeft: 'auto', marginRight: 'auto', position: 'absolute', top: '50%', right: 0, left: 0, margin: '0 auto' }}>
                     {this.props.children}
                 </div>
                 

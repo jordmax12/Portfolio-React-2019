@@ -1,0 +1,18 @@
+.aa_txt {
+    position: relative; 
+    font: 100 10vh/1 'Roboto'; 
+    text-align: center; 
+    color: #0D1116;
+}
+
+.aa_inner {
+    padding: 1rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: transparent;
+}
+
+.aa_of {
+    padding: 0 2rem;
+    background: #ffffff;
+}

@@ -13,23 +13,20 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div
-                style={{
-                    width: "100%",
-                    height: "100%",
-                    backgroundColor: '#0D1116'
-                }}
-            >
+            <div id="home">
+                <div id="littleJordanHolder">
+                    <div id="littleJordanCanvas"></div>
+                </div>
                 <Particles>
-                    <div class="aa_txt" style={{ font: '100 10vh/1 Roboto', textAlign: 'center', color: '#0D1116' }}>
-                        <span class="aa_inner" style={{ padding: '1rem', textTransform: 'uppercase', color: '#ffffff', background: '#0D1116' }}>
+                    <div className="aa_txt">
+                        <span className="aa_inner">
                             Jordan
                         </span>
-                        <span style={{ padding: '0 2rem', background: '#ffffff' }} class="aa_of">
+                        <span className="aa_of">
                             MAX
                         </span>
                     </div>
-                    <div style={{ color: 'white', textAlign: 'center' }}>
+                    <div className="cW tac">
                         <p> Jordan is a&nbsp;
                         <Typed
                                 strings={[
@@ -44,7 +41,7 @@ class Home extends React.Component {
                                 backSpeed={50}
                                 ref="typedTarget"
                                 loop >
-                                <span style={{ color: '#fed136' }} id="typedTarget"></span>
+                                <span id="typedTarget"></span>
                             </Typed>
                         </p>
                     </div>
