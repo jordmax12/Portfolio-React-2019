@@ -67,6 +67,7 @@ class ParticlesComponent extends React.Component {
                                 "enable": false,
                                 "distance": 500,
                                 "color": "#23e7ff",
+                                // "color": "#000000",
                                 "opacity": 0.4,
                                 "width": 2
                             },
@@ -100,9 +101,9 @@ class ParticlesComponent extends React.Component {
                             },
                             "modes": {
                                 "grab": {
-                                    "distance": 150,
+                                    "distance": 200,
                                     "line_linked": {
-                                        "opacity": 0.5,
+                                        "opacity": 0.8,
                                     }
                                 },
                                 "bubble": {

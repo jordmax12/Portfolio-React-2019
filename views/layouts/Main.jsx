@@ -14,7 +14,7 @@ class Main extends React.Component {
 
     render() {
         return (
-            <div style={{ backgroundColor: '#0D1116' }}>
+            <div id="main" style={{ backgroundColor: '#0D1116' }}>
                 {/* <div style={{height: '50px', width: '100%', backgroundColor: 'grey', color: 'white'}} id="header">
                     Header
                 </div> */}
