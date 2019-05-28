@@ -10,6 +10,9 @@ const wrapper = `<html>
     <link rel="stylesheet" href="/littleJordan.css" />
     <link rel="stylesheet" href="/typed.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" 
+integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" 
+crossorigin="anonymous">
     <style>
         body { margin: 0 !important; }
     </style>
@@ -22,4 +25,4 @@ const wrapper = `<html>
 <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
 </html>`
 
-module.exports = {wrapper}
+module.exports = { wrapper }

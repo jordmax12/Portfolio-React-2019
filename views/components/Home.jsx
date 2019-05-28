@@ -26,7 +26,7 @@ class Home extends React.Component {
                             MAX
                         </span>
                     </div>
-                    <div className="cW tac">
+                    <div className="cW tac mt10 ">
                         <p> Jordan is a&nbsp;
                         <Typed
                                 strings={[

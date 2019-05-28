@@ -83,6 +83,7 @@ function resourceLoaded() {
       var dw = $dropDiv.outerWidth();
       var offset = $('.aa_inner').offset();
       var screenSize = $(window).width();
+      let width = window.innerWidth;
       if(screenSize > 860) {
          // animate drop
          var left = (offset.left + dh);
@@ -93,16 +94,53 @@ function resourceLoaded() {
          var top = (offset.top - dh) + 42;
       }
 
-      $dropDiv.css({
-         left: $('#headerMarker').offset().left + 200,
-         top: $('#headerMarker').offset().top - 48
-      });
+      if(width > 767) {
+         $('#basic-navbar-nav').css('height', '40px');
+         $dropDiv.css({
+            left: $('#headerMarker').offset().left + 300,
+            top: $('#headerMarker').offset().top - 106
+         });
+      } else {
+         $dropDiv.css({
+            left: 10,
+            top: $('#headerMarker').offset().top - 85
+         });
+      }
+      // console.log($('body').css('overflow'))
+      $('.navbar-toggler').on('click', (e) => {
+         let isShown = $('#basic-navbar-nav').hasClass('show');
+
+         if(isShown)
+         {
+            
+            setTimeout(() => {
+               $('#littleJordanHolder').css('display', 'block')
+               $('body').css('overflow-y', 'visible')
+            }, 400)
+         } else {
+            // $('#home').css('height', 'calc(100% - 150px)')
+            $('#littleJordanHolder').css('display', 'none');
+            $('body').css('overflow-y', 'hidden')
+         }
+      })
 
       $(window).on('resize', () => {
-         $dropDiv.css({
-            left: $('#headerMarker').offset().left + 200,
-            top: $('#headerMarker').offset().top - 48
-         });
+         width = window.innerWidth;
+         let isShown = $('#basic-navbar-nav').hasClass('show');
+
+         if(width > 767) {
+            //TODO: move this to header.js
+            $('#basic-navbar-nav').css('height', '40px');
+            $dropDiv.css({
+               left: $('#headerMarker').offset().left + 300,
+               top: $('#headerMarker').offset().top - 106
+            });
+         } else {
+            $dropDiv.css({
+               left: 10,
+               top: $('#headerMarker').offset().top - 85
+            });
+         }
       })
    }
 }
@@ -134,7 +172,7 @@ function redraw() {
        if(y < 190) {
          y += jumpHeight;   
        } else {
-           justJumped = false;    
+           justJumped = false;       
        }
               
        switch(numTimesJumped) {

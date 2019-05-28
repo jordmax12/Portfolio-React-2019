@@ -9,3 +9,34 @@
 .cW {
     color: white;
 }
+
+.mt10 {
+    margin-top: 10px;
+}
+
+nav {
+    background-color: transparent !important;
+}
+
+.nav-link, #basic-navbar-nav, #basic-nav-dropdown, .navbar-toggler, .navbar-toggler-icon {
+    color: white !important;
+    z-index: 1000;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABkCAMAAACCTv/3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////5ubmueBsSwAAAAJ0Uk5T/wDltzBKAAAAPklEQVR42uzYQQ0AAAgDseHfNC4IyVoD912WAACUm3uampqampqamq+aAAD+IVtTU1NTU1NT0z8EAFBsBRgAX+kR+Qam138AAAAASUVORK5CYII=) !important;
+    z-index: 1000 !important;
+}
+@media (max-width: 767px) {
+    /* #littleJordanHolder { display: none} */
+    .aa_inner::after {
+        content: "\A";
+        white-space: pre;
+    }
+}
+
+@media (min-width: 767px) {
+    .basic-navbar-nav {
+        height: auto !important
+    }
+}
