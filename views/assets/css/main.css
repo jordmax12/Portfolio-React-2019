@@ -18,7 +18,11 @@ nav {
     background-color: transparent !important;
 }
 
-.nav-link, #basic-navbar-nav, #basic-nav-dropdown, .navbar-toggler, .navbar-toggler-icon {
+.nav-link,
+#basic-navbar-nav,
+#basic-nav-dropdown,
+.navbar-toggler,
+.navbar-toggler-icon {
     color: white !important;
     z-index: 1000;
 }
@@ -27,6 +31,32 @@ nav {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABkCAMAAACCTv/3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////5ubmueBsSwAAAAJ0Uk5T/wDltzBKAAAAPklEQVR42uzYQQ0AAAgDseHfNC4IyVoD912WAACUm3uampqampqamq+aAAD+IVtTU1NTU1NT0z8EAFBsBRgAX+kR+Qam138AAAAASUVORK5CYII=) !important;
     z-index: 1000 !important;
 }
+
+body {
+    /* background-color: rgba(169,169,169,.2) !important; */
+    background-color: rgba(50, 16, 81, .5) !important
+}
+
+.MuiGrid-grid-md-1,
+.MuiGrid-grid-md-2,
+.MuiGrid-grid-md-3,
+.MuiGrid-grid-md-4,
+.MuiGrid-grid-md-5,
+.MuiGrid-grid-md-6,
+.MuiGrid-grid-md-7,
+.MuiGrid-grid-md-8,
+.MuiGrid-grid-md-9,
+.MuiGrid-grid-md-10,
+.MuiGrid-grid-md-12,
+.MuiGrid-grid-md-12 {
+    width: 100%
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
 @media (max-width: 767px) {
     /* #littleJordanHolder { display: none} */
     .aa_inner::after {

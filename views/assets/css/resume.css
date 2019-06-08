@@ -1,0 +1,66 @@
+.me-image {
+    height: auto;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.resume-me {
+    padding: 15px;
+}
+
+.social-container {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.social {
+    padding: 0;
+}
+
+.social li {
+    display: inline-block;
+    margin-right: 2px;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.social li i {
+    line-height: 1;
+    color: black;
+}
+
+.social li i:hover {
+    color: #B22222;
+}
+
+@media (min-width: 768px) {
+    .resume-container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .resume-container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .resume-container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 1170px;
+    }
+}

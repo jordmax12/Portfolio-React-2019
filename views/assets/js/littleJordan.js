@@ -30,7 +30,11 @@ var showMarioBox = false;
 var jumpHeight = 3;
 
 $(document).ready(() => {
-   prepareCanvas(document.getElementById('littleJordanCanvas'), '100px', '100px')
+   if(window.location.pathname != "/") return;
+   prepareCanvas(document.getElementById('littleJordanCanvas'), '100px', '100px');
+   if(window.location.pathname == "/") {
+      $('.navbar').css('background-color: transparent !important')
+   } 
 })
 
 function updateFPS() {
@@ -319,7 +323,13 @@ var colorIndices = [0, 1, 2, 3];
 var gradientSpeed = 0.002;
 
 function updateGradient() {
-
+   if(window.location.pathname != "/") {
+      $('#main, #home').css({
+         background: "transparent"
+      })
+      $('.navbar').css('background-color:  rgba(50,16,81, .5) !important')
+      return;
+   } 
    if ($ === undefined) return;
 
    var c0_0 = colors[colorIndices[0]];

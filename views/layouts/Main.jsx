@@ -1,7 +1,9 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Home from '../components/Home.jsx';
+import Resume from '../components/Resume.jsx';
 import Header from './Header.jsx';
+import Grid from '@material-ui/core/Grid';
 
 class Main extends React.Component {
     constructor(props) {
@@ -15,11 +17,9 @@ class Main extends React.Component {
     render() {
         return (
             <div id="main" style={{ backgroundColor: '#0D1116' }}>
-                {/* <div style={{height: '50px', width: '100%', backgroundColor: 'grey', color: 'white'}} id="header">
-                    Header
-                </div> */}
                 <Header />
                 <Switch>
+                    <Route path="/resume" component={Resume} />
                     <Route path="/" component={Home} />
                 </Switch>
             </div>

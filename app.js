@@ -12,7 +12,7 @@ app.use(express.static(__dirname + '/views/assets/js'));
 app.use(express.static(__dirname + '/views/assets/css'));
 app.use(express.static(__dirname + '/views/assets/img/Little Jordan'));
 
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
     res.send(wrapper);
 })
 

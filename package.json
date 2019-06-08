@@ -11,6 +11,7 @@
   "author": "Jordan Max",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^4.0.1",
     "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2",
     "bootstrap": "^4.3.1",

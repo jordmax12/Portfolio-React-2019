@@ -5,6 +5,7 @@ import Typed from 'react-typed';
 class Home extends React.Component {
     constructor(props) {
         super(props);
+        console.log('here')
     }
 
     componentDidMount() {
@@ -30,13 +31,13 @@ class Home extends React.Component {
                         <p> Jordan is a&nbsp;
                         <Typed
                                 strings={[
-                                    'Software Engineer.',
-                                    'Full Stack Web Developer.',
-                                    'Mobile App Developer.',
-                                    'ReactJS Developer.',
-                                    'Gamer.',
-                                    'Blackhawks/Bulls/Whitesox fan.',
-                                    'Animal lover.']}
+                                    'Software Engineer',
+                                    'Full Stack Web Developer',
+                                    'Mobile App Developer',
+                                    'ReactJS Developer',
+                                    'Gamer',
+                                    'Blackhawks/Bulls/Whitesox fan',
+                                    'Animal lover']}
                                 typeSpeed={40}
                                 backSpeed={50}
                                 ref="typedTarget"

@@ -6,15 +6,15 @@ import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-boots
 class Header extends React.Component {
     render() {
         return (
-            <Navbar expand="lg" style={{ backgroundColor: 'transparent !important;'}}>
+            <Navbar expand="lg">
                 {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Resume</Nav.Link>
-                        <Nav.Link href="#link">Projects</Nav.Link>
-                        <Nav.Link href="#link">Contact</Nav.Link>
+                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/resume">Resume</Nav.Link>
+                        <Nav.Link href="/resume">Projects</Nav.Link>
+                        <Nav.Link href="/resume">Contact</Nav.Link>
                     </Nav>
                     {/* <Form inline>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
