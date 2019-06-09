@@ -30,12 +30,9 @@ class Resume extends React.Component {
                                         <h1 style={{ color: '#000000 !important' }}>Experience</h1>
                                         <div className="divider">
                                             <div className="zigzag large clearfix" data-svg-drawing="yes">
-                                                {/* <svg xml:space="preserve" viewBox="0 0 69.172 4.975" width="37" height="28" y="0px"
-                                       x="0px" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                       xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                {/* <svg throwIfNamespace xml:space="preserve" viewBox="0 0 69.172 4.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
                                        <path d="M1.357,12.26 10.807,2.81 20.328,12.332
-                                            29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "
-                                          style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"></path>
+                                            29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 " className="test"></path>
                                     </svg> */}
                                             </div>
                                         </div>
@@ -128,7 +125,7 @@ class Resume extends React.Component {
                                         <h1 style={{ color: "#000000 !important" }}>Education</h1>
                                         <div className="divider">
                                             <div className="zigzag large clearfix " data-svg-drawing="yes">
-                                                {/* <svg xml:space="preserve" viewBox="0 0 69.172 4.975" width="37" height="28" y="0px"
+                                                {/* <svg  viewBox="0 0 69.172 4.975" width="37" height="28" y="0px"
                                        x="0px" xmlns:xlink="http://www.w3.org/1999/xlink"
                                        xmlns="http://www.w3.org/2000/svg" version="1.1">
                                        <path d="M1.357,12.26 10.807,2.81 20.328,12.332
@@ -165,7 +162,7 @@ class Resume extends React.Component {
                                     <div className="button ofsInTop tCenter clearfix">
                                         <div className="divider">
                                             <div className="zigzag large clearfix " data-svg-drawing="yes">
-                                                {/* <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px"
+                                                {/* <svg  viewBox="0 0 69.172 14.975" width="37" height="28" y="0px"
                                        x="0px" xmlns:xlink="http://www.w3.org/1999/xlink"
                                        xmlns="http://www.w3.org/2000/svg" version="1.1">
                                        <path d="M1.357,12.26 10.807,2.81 20.328,12.332
@@ -174,11 +171,9 @@ class Resume extends React.Component {
                                     </svg> */}
                                             </div>
                                         </div>
-                                        <div className="row ">
-                                            <div className="col-md-12">
-                                                <a className="but opc-1 ico" href="/portfolio/Resume.pdf"
-                                                    target="_blank">Download my cv</a>
-                                            </div>
+                                        <div className="mt25 tac">
+                                            <a className="but opc-1 ico" href="https://jdmdev.net/portfolio/Resume.pdf"
+                                                target="_blank"><i className="fa fa-download mr10" aria-hidden="true"></i>Download my cv</a>
                                         </div>
                                     </div>
                                 </div>

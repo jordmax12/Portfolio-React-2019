@@ -4,76 +4,71 @@ const env = 'stage';
 const Dotenv = require('dotenv-webpack');
 
 let config = {
-  mode: 'development',
-  node: {
-    fs: "empty"
-  },
-  entry: 
-  [
-    '@babel/polyfill',
-    './client-src/app.js'
-  ],
-  output: {
-    path: __dirname + '/dist',
-    publicPath: '/',
-    filename: 'main.js'
-  },
-  module: {
-    rules: [
-      {
-        test: /\.(jsx|js)$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-          presets: [
-            [
-              '@babel/preset-env',
-              {
-                'targets': {
-                  'browsers': [
-                    ">0.25%",
-                    "not ie 11",
-                    "not op_mini all"
-                  ]
-                }
-              }
-            ],
-            '@babel/preset-react',
-          ],
-          plugins: [
-            '@babel/plugin-syntax-dynamic-import',
-            '@babel/plugin-syntax-import-meta',
-            '@babel/plugin-proposal-class-properties',
-            '@babel/plugin-proposal-json-strings',
-            '@babel/plugin-transform-async-to-generator',
-            [
-              '@babel/plugin-proposal-decorators',
-              {
-                "legacy": true
-              }
-            ],
-            '@babel/plugin-proposal-function-sent',
-            '@babel/plugin-proposal-export-namespace-from',
-            '@babel/plugin-proposal-numeric-separator',
-            '@babel/plugin-proposal-throw-expressions',
-            ...(
-              env === 'stage' || env === 'prod'
-                ? ['transform-react-remove-prop-types']
-                : []
-            )
-          ],
-        }
-      },
-      {
-        test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
-      }
+    mode: 'development',
+    node: {
+        fs: "empty"
+    },
+    entry: [
+        '@babel/polyfill',
+        './client-src/app.js'
     ],
-  },
-  performance: { hints: false },
-  plugins: [
-    new Dotenv()
-  ]
+    output: {
+        path: __dirname + '/dist',
+        publicPath: '/',
+        filename: 'main.js'
+    },
+    module: {
+        rules: [{
+                test: /\.(jsx|js)$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+                query: {
+                    presets: [
+                        [
+                            '@babel/preset-env',
+                            {
+                                'targets': {
+                                    'browsers': [
+                                        ">0.25%",
+                                        "not ie 11",
+                                        "not op_mini all"
+                                    ]
+                                }
+                            }
+                        ],
+                        '@babel/preset-react',
+                    ],
+                    plugins: [
+                        '@babel/plugin-syntax-dynamic-import',
+                        '@babel/plugin-syntax-import-meta',
+                        '@babel/plugin-proposal-class-properties',
+                        '@babel/plugin-proposal-json-strings',
+                        '@babel/plugin-transform-async-to-generator', [
+                            '@babel/plugin-proposal-decorators',
+                            {
+                                "legacy": true
+                            }
+                        ],
+                        '@babel/plugin-proposal-function-sent',
+                        '@babel/plugin-proposal-export-namespace-from',
+                        '@babel/plugin-proposal-numeric-separator',
+                        '@babel/plugin-proposal-throw-expressions',
+                        ...(
+                            env === 'stage' || env === 'prod' ? ['transform-react-remove-prop-types'] : []
+                        )
+                    ],
+                }
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            }
+        ],
+    },
+    performance: { hints: false },
+    plugins: [
+        new Dotenv()
+    ]
 };
 
 // if(env === 'staged' || env === 'production') {

@@ -69,6 +69,14 @@ ul {
     width: 100%;
 }
 
+.mr10 {
+    margin-right: 10px;
+}
+
+.mt25 {
+    margin-top: 25px;
+}
+
 .floatL {
     float: left;
 }
