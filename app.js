@@ -11,6 +11,7 @@ app.use(express.static(__dirname + '/dist'));
 app.use(express.static(__dirname + '/views/assets/js'));
 app.use(express.static(__dirname + '/views/assets/css'));
 app.use(express.static(__dirname + '/views/assets/img/Little Jordan'));
+app.use(express.static(__dirname + '/views/assets/img/logos'));
 
 app.get('*', (req, res) => {
     res.send(wrapper);

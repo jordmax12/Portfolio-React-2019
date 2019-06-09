@@ -57,6 +57,26 @@ ul {
     list-style: none;
 }
 
+.lst-none {
+    list-style-type: none;
+}
+
+.lst-disc {
+    list-style-type: disc;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.floatL {
+    float: left;
+}
+
+.floatR {
+    float: right;
+}
+
 @media (max-width: 767px) {
     /* #littleJordanHolder { display: none} */
     .aa_inner::after {
