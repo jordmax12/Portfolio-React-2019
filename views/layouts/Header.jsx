@@ -7,7 +7,6 @@ class Header extends React.Component {
     render() {
         return (
             <Navbar expand="lg">
-                {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
@@ -18,10 +17,6 @@ class Header extends React.Component {
                         <a href="https://jdmdev.net" target="__blank" className="nav-link">View Original</a>
                         <a href="https://github.com/jordmax12/Portfolio-React-2019" target="__blank" className="nav-link">View in Github</a>
                     </Nav>
-                    {/* <Form inline>
-                        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                        <Button variant="outline-success">Search</Button>
-                    </Form> */}
                 </Navbar.Collapse>
             </Navbar>
         );
