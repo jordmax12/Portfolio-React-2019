@@ -31,7 +31,7 @@ class Timeline extends React.Component {
                         iconStyle={{ background: 'rgb(135,206,250)', color: '#fff' }}
                     icon={<div className="tac"><i class="fab fa-js-square projectIcon"></i></div>}
                     >
-                        <h3 className="vertical-timeline-element-title"><a href="/AlexaMinerProject.png" target="__blank">Alexa in the Browser (with FCB)</a></h3>
+                        <h3 className="vertical-timeline-element-title"><a href="/AlexaMinerProject.png" target="__blank">Alexa in the Browser (with FCB Chicago)</a></h3>
                         <h4 className="vertical-timeline-element-subtitle mt10">NodeJS, Alexa Voice Services, AWS (Transcribe, DynamoDB) </h4>
                         <p> Fun tool that enabled users to use an Alexa right from their browser. Record a question, and send it off to Alexa. Our process parsed the result, sent it through transcribe and stored the text result in DynamoDB. </p>
                     </VerticalTimelineElement>
@@ -51,7 +51,7 @@ class Timeline extends React.Component {
                         iconStyle={{ background: 'rgb(135,206,250)', color: '#fff' }}
                     icon={<div className="tac"><i class="fab fa-js-square projectIcon"></i></div>}
                     >
-                        <h3 className="vertical-timeline-element-title"><a href="https://www.youtube.com/watch?v=jBLSxzdbo4o&feature=youtu.be" target="__blank">Photoshop Automation (with FCB)</a></h3>
+                        <h3 className="vertical-timeline-element-title"><a href="https://www.youtube.com/watch?v=jBLSxzdbo4o&feature=youtu.be" target="__blank">Photoshop Automation (with FCB Chicago)</a></h3>
                         <h4 className="vertical-timeline-element-subtitle mt10">ES5 Javascript</h4>
                         <p> Utilizing the Adobe Scripting API I was able to build out an automation script that made designers and copywriters more efficient by relieving them of tedius manual processes. </p>
                     </VerticalTimelineElement>
