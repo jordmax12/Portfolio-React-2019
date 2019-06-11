@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 8080;
-// const sendmail = require('sendmail')();
 const nodemailer = require("nodemailer");
 const { wrapper } = require('./views/wrapper');
 const bodyParser = require('body-parser');
@@ -20,17 +19,7 @@ app.use(bodyParser());
 app.all('/api/sendEmail', (req, res) => {
     console.log(req.body);
     const { firstName, lastName, subject, message } = req.body;
-    // sendmail({
-    //     from: 'jordmax12@gmail.com',
-    //     to: 'jordmax12@gmail.com',
-    //     subject: subject,
-    //     html: `Message from: ${firstName} ${lastName}. <br/><br/> ${message}`,
-    // }, function(err, reply) {
-    //     console.log(err && err.stack);
-    //     console.dir(reply);
-    //     res.json({ success: true })
-    // });
-
+    
     let auth = {
         user: process.env.GMAIL_LOGIN,
         pass: process.env.GMAIL_PW
@@ -44,9 +33,9 @@ app.all('/api/sendEmail', (req, res) => {
     });
 
     const mailOptions = {
-        from: process.env.GMAIL_LOGIN, // sender address
-        to: process.env.GMAIL_RECIPIENT, // list of receivers
-        subject, // Subject line
+        from: process.env.GMAIL_LOGIN,
+        to: process.env.GMAIL_RECIPIENT,
+        subject,
         html: `Message from: ${firstName} ${lastName}. <br/><br/> ${message}`
     };
 
