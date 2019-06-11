@@ -112,6 +112,10 @@ ul {
     text-align: center;
 }
 
+.vertical-timeline {
+    margin-top: 0 !important;
+}
+
 @media (max-width: 767px) {
     /* #littleJordanHolder { display: none} */
     .aa_inner::after {
