@@ -18,8 +18,8 @@ class Timeline extends React.Component {
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         date="2018-2019"
-                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    // icon={<SchoolIcon />}
+                        iconStyle={{ background: 'rgb(135,206,250)', color: '#fff' }}
+                    icon={<div className="tac"><i class="fab fa-js-square projectIcon"></i></div>}
                     >
                         <h3 className="vertical-timeline-element-title"><a href="https://www.fcbvita.com/" target="__blank">FCB Vita</a></h3>
                         <h4 className="vertical-timeline-element-subtitle mt10">GraphQL, Prisma, NodeJS, ReactJS, AWS (EC2, ECS, SQS, SNS, Rekognition), Azure (Cognitive Services), Google Cloud Platform (Kubernetes, Storage, Vision) Docker</h4>
@@ -27,9 +27,19 @@ class Timeline extends React.Component {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
+                        date="June 2019"
+                        iconStyle={{ background: 'rgb(135,206,250)', color: '#fff' }}
+                    icon={<div className="tac"><i class="fab fa-js-square projectIcon"></i></div>}
+                    >
+                        <h3 className="vertical-timeline-element-title"><a href="/AlexaMinerProject.png" target="__blank">Alexa in the Browser (with FCB)</a></h3>
+                        <h4 className="vertical-timeline-element-subtitle mt10">NodeJS, Alexa Voice Services, AWS (Transcribe, DynamoDB) </h4>
+                        <p> Fun tool that enabled users to use an Alexa right from their browser. Record a question, and send it off to Alexa. Our process parsed the result, sent it through transcribe and stored the text result in DynamoDB. </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--education"
                         date="May 2019"
-                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    // icon={<SchoolIcon />}
+                        iconStyle={{ background: 'rgb(135,206,250)', color: '#fff' }}
+                    icon={<div className="tac"><i class="fab fa-js-square projectIcon"></i></div>}
                     >
                         <h3 className="vertical-timeline-element-title"><a href="https://github.com/jordmax12/WERN-Skeleton" target="__blank">WERN Skeleton</a></h3>
                         <h4 className="vertical-timeline-element-subtitle mt10">Webpack, Express, ReactJS, NodeJS</h4>
@@ -37,9 +47,19 @@ class Timeline extends React.Component {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
+                        date="May 2019"
+                        iconStyle={{ background: 'rgb(135,206,250)', color: '#fff' }}
+                    icon={<div className="tac"><i class="fab fa-js-square projectIcon"></i></div>}
+                    >
+                        <h3 className="vertical-timeline-element-title"><a href="https://www.youtube.com/watch?v=jBLSxzdbo4o&feature=youtu.be" target="__blank">Photoshop Automation (with FCB)</a></h3>
+                        <h4 className="vertical-timeline-element-subtitle mt10">ES5 Javascript</h4>
+                        <p> Utilizing the Adobe Scripting API I was able to build out an automation script that made designers and copywriters more efficient by relieving them of tedius manual processes. </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--education"
                         date="November 2018"
-                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    // icon={<SchoolIcon />}
+                        iconStyle={{ background: 'rgb(135,206,250)', color: '#fff' }}
+                    icon={<div className="tac"><i class="fab fa-js-square projectIcon"></i></div>}
                     >
                         <h3 className="vertical-timeline-element-title"><a href="https://www.amazon.com/Bioverativ-Infusion-Squad/dp/B07N395L84" target="__blank">Infusion Squad (Alexa)</a></h3>
                         <h4 className="vertical-timeline-element-subtitle mt10">Alexa Voice Services, NodeJS, Azure Serverless Functions, DynamoDB</h4>
@@ -48,8 +68,8 @@ class Timeline extends React.Component {
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         date="July 2018"
-                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    // icon={<SchoolIcon />}
+                        iconStyle={{ background: 'rgb(135,206,250)', color: '#fff' }}
+                    icon={<div className="tac"><i class="fab fa-js-square projectIcon"></i></div>}
                     >
                         <h3 className="vertical-timeline-element-title"><a href="https://www.adsoftheworld.com/media/experiential/radio_flyer_radio_flyer_adventure_travel" target="">Radio Flyer Campaign (with FCB Chicago)</a></h3>
                         <h4 className="vertical-timeline-element-subtitle mt10">NodeJS, ReactJS, Microsoft Cognitive Services</h4>
@@ -58,8 +78,8 @@ class Timeline extends React.Component {
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         date="May 2018"
-                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    // icon={<SchoolIcon />}
+                        iconStyle={{ background: 'rgb(135,206,250)', color: '#fff' }}
+                    icon={<div className="tac"><i class="fab fa-js-square projectIcon"></i></div>}
                     >
                         <h3 className="vertical-timeline-element-title"><a href="https://game.symtuza.com/" target="">Symtuza: Don't Risk Resistance (with FCB Chicago)</a></h3>
                         <h4 className="vertical-timeline-element-subtitle mt10">jQuery, HTML, CSS</h4>
@@ -68,8 +88,8 @@ class Timeline extends React.Component {
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         date="November 2017"
-                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    // icon={<SchoolIcon />}
+                        iconStyle={{ background: 'rgb(135,206,250)', color: '#fff' }}
+                    icon={<div className="tac"><i class="fab fa-js-square projectIcon"></i></div>}
                     >
                         <h3 className="vertical-timeline-element-title"><a href="https://alprolix.com" target="">Alprolix (with FCB Chicago)</a></h3>
                         <h4 className="vertical-timeline-element-subtitle mt10">ASP.NET Web Forms, ReactJS, AWS (Load Balancer, S3)</h4>
@@ -78,8 +98,8 @@ class Timeline extends React.Component {
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         date="October 2017"
-                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    // icon={<SchoolIcon />}
+                        iconStyle={{ background: 'rgb(135,206,250)', color: '#fff' }}
+                    icon={<div className="tac"><i class="fab fa-js-square projectIcon"></i></div>}
                     >
                         <h3 className="vertical-timeline-element-title"><a href="https://eloctate.com" target="">Eloctate (with FCB Chicago)</a></h3>
                         <h4 className="vertical-timeline-element-subtitle mt10">ASP.NET Web Forms, ReactJS, AWS (Load Balancer, S3)</h4>
@@ -89,7 +109,7 @@ class Timeline extends React.Component {
                         className="vertical-timeline-element--education"
                         date="2017"
                         iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    // icon={<SchoolIcon />}
+                    icon={<div className="tac"><i class="fab fa-microsoft projectIcon"></i></div>}
                     >
                         <h3 className="vertical-timeline-element-title"><a href="https://itunes.apple.com/us/app/newser/id334678577?mt=8" target="__blank">Newser Mobile App</a></h3>
                         <h4 className="vertical-timeline-element-subtitle mt10">Xamarin, Azure, ASP.NET (API), Azure Notification Hub</h4>
@@ -99,7 +119,7 @@ class Timeline extends React.Component {
                         className="vertical-timeline-element--education"
                         date="2017"
                         iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    // icon={<SchoolIcon />}
+                    icon={<div className="tac"><i class="fab fa-microsoft projectIcon"></i></div>}
                     >
                         <h3 className="vertical-timeline-element-title"><a href="https://m.newser.com" target="__blank">Newser Site Redesign</a></h3>
                         <h4 className="vertical-timeline-element-subtitle mt10">ASP.Net Web Forms, RactiveJS, SemanticUI</h4>
@@ -109,7 +129,7 @@ class Timeline extends React.Component {
                         className="vertical-timeline-element--education"
                         date="2016"
                         iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    // icon={<SchoolIcon />}
+                    icon={<div className="tac"><i class="fab fa-microsoft projectIcon"></i></div>}
                     >
                         <h3 className="vertical-timeline-element-title"><a href="https://itunes.apple.com/us/app/nextcrew/id1031706393?mt=8" target="__blank">Nextcrew Mobile App</a></h3>
                         <h4 className="vertical-timeline-element-subtitle mt10">ASP.NET, Cordova, RactiveJS</h4>
@@ -119,7 +139,7 @@ class Timeline extends React.Component {
                         className="vertical-timeline-element--education"
                         date="2016"
                         iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    // icon={<SchoolIcon />}
+                    icon={<div className="tac"><i class="fab fa-microsoft projectIcon"></i></div>}
                     >
                         <h3 className="vertical-timeline-element-title">Nextcrew Quickbooks Integration</h3>
                         <h4 className="vertical-timeline-element-subtitle mt10">C#</h4>
@@ -129,7 +149,7 @@ class Timeline extends React.Component {
                         className="vertical-timeline-element--education"
                         date="May 2015"
                         iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    // icon={<SchoolIcon />}
+                    icon={<div className="tac"><i class="fab fa-microsoft projectIcon"></i></div>}
                     >
                         <h3 className="vertical-timeline-element-title"><a href="https://github.com/jordmax12/SparkHelp" target="_blank">Spark Help</a></h3>
                         <h4 className="vertical-timeline-element-subtitle mt10">ASP.NET Entity Frameworks, Bootstrap, MySQL, Azure (Database)</h4>
@@ -139,7 +159,7 @@ class Timeline extends React.Component {
                         className="vertical-timeline-element--education"
                         date="2015"
                         iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    // icon={<SchoolIcon />}
+                    icon={<div className="tac"><i class="fab fa-microsoft projectIcon"></i></div>}
                     >
                         <h3 className="vertical-timeline-element-title"><a href="https://www.youtube.com/watch?v=iZ_GP43Gqgo&t=49s" target="_blank">Procedural Pathfinding Node Algorithm</a></h3>
                         <h4 className="vertical-timeline-element-subtitle mt10">C#, Unity3D</h4>

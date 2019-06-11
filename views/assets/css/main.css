@@ -2,6 +2,14 @@
     width: 100%
 }
 
+.mw786 {
+    max-width: 786px;
+}
+
+.bgWhite {
+    background-color: white;
+}
+
 .tac {
     text-align: center;
 }
@@ -12,6 +20,11 @@
 
 .mt10 {
     margin-top: 10px !important;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav {
@@ -77,12 +90,26 @@ ul {
     margin-top: 25px;
 }
 
+.p10 {
+    padding: 10px;
+}
+
+.p50 {
+    padding: 50px;
+}
+
 .floatL {
     float: left;
 }
 
 .floatR {
     float: right;
+}
+
+.projectIcon {
+    font-size: 1.3em;
+    margin-top: 10;
+    text-align: center;
 }
 
 @media (max-width: 767px) {
@@ -96,5 +123,25 @@ ul {
 @media (min-width: 767px) {
     .basic-navbar-nav {
         height: auto !important
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date:nth-child(even) {
+        left: 140% !important;
+    }
+    .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date:nth-child(odd) {
+        left: auto !important;
+    }
+    .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date,
+    .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content .vertical-timeline-element-date {
+        left: auto !important;
+        right: 140% !important;
+        text-align: right;
+    }
+    .projectIcon {
+        font-size: 2em;
+        margin-top: 13;
+        text-align: center;
     }
 }

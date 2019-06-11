@@ -14,8 +14,7 @@ class Header extends React.Component {
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/resume">Resume</Nav.Link>
                         <Nav.Link href="/timeline">Timeline</Nav.Link>
-                        <Nav.Link href="/timeline">About</Nav.Link>
-                        <Nav.Link href="/resume">Contact</Nav.Link>
+                        <Nav.Link href="/contact">Contact</Nav.Link>
                     </Nav>
                     {/* <Form inline>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
