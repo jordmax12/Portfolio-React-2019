@@ -16,6 +16,7 @@ class Header extends React.Component {
                         <Nav.Link href="/timeline">Timeline</Nav.Link>
                         <Nav.Link href="/contact">Contact</Nav.Link>
                         <a href="https://jdmdev.net" target="__blank" className="nav-link">View Original</a>
+                        <a href="https://github.com/jordmax12/Portfolio-React-2019" target="__blank" className="nav-link">View in Github</a>
                     </Nav>
                     {/* <Form inline>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
