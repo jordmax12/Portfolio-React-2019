@@ -43,7 +43,7 @@ class Timeline extends React.Component {
                     >
                         <h3 className="vertical-timeline-element-title"><a href="https://github.com/jordmax12/WERN-Skeleton" target="__blank">WERN Skeleton</a></h3>
                         <h4 className="vertical-timeline-element-subtitle mt10">Webpack, Express, ReactJS, NodeJS</h4>
-                        <p> Built a simple skeleton to help people get started on projects utilizing webpack, express, reactjs, and nodejs, webpack. Express can be interchanged with any other framework. This portfolio was built using WERN.</p>
+                        <p> Built a simple skeleton to help people get started on projects utilizing webpack, express, reactjs, and nodejs. Express can be interchanged with any other framework. This portfolio was built using WERN.</p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"

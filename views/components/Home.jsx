@@ -5,7 +5,6 @@ import Typed from 'react-typed';
 class Home extends React.Component {
     constructor(props) {
         super(props);
-        console.log('here')
     }
 
     componentDidMount() {
