@@ -57,6 +57,16 @@ class Timeline extends React.Component {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
+                        date="January 2019"
+                        iconStyle={{ background: 'rgb(135,206,250)', color: '#fff' }}
+                    icon={<div className="tac"><i class="fab fa-js-square projectIcon"></i></div>}
+                    >
+                        <h3 className="vertical-timeline-element-title"><a href="https://github.com/jordmax12/discordbotesea" target="__blank">ESEA Discord Bot</a></h3>
+                        <h4 className="vertical-timeline-element-subtitle mt10">NodeJS, Heroku</h4>
+                        <p> utilizing the ESEA api, I made a Discord bot for a friend who had a Discord server of 1,000+ users daily. They used this server to set up scrims and matches in an online game called Counter-Strike. This Discord bot authenticated users and assigned them roles and rights depending on their rank on ESEA. </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--education"
                         date="November 2018"
                         iconStyle={{ background: 'rgb(135,206,250)', color: '#fff' }}
                     icon={<div className="tac"><i class="fab fa-js-square projectIcon"></i></div>}
