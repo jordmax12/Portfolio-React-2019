@@ -62,12 +62,22 @@ const projects = [{
     description: 'Agriedge Calculator Tool was a tool designed to help sales reps and growers figure out how to get the most rebate out of their purchases, designed specifically to look at soil conditions, weather patterns..etc to recommend the best product, which then would give them a better rebate.',
     iconClass: 'fab fa-react projectIcon',
     iconColor: 'rgb(97,218,251)'
-}, {
+},
+{
     link: 'https://www.fcbvita.com/',
     date: '2018-2019',
     title: 'FCB Vita',
     stack: 'GraphQL, Prisma, NodeJS, ReactJS, AWS (EC2, ECS, SQS, SNS, Rekognition), Azure (Cognitive Services), Google Cloud Platform (Kubernetes, Storage, Vision) Docker',
     description: 'FCB Vita is a flagship product that sends media through an array of API services to gather metadata and annotation data frame by frame. I was able to develop most of the backend services that this product uses and build the main API in which all services use to operate.',
+    iconClass: 'fab fa-js-square projectIcon',
+    iconColor: 'rgb(135,206,250)'
+},
+{
+    link: 'https://signal-code-challenge.herokuapp.com/',
+    date: 'June 2019',
+    title: 'Signal Coding Challenge',
+    stack: 'NodeJS, Heroku',
+    description: 'Simple notification CRUD api built as a coding challenge.',
     iconClass: 'fab fa-js-square projectIcon',
     iconColor: 'rgb(135,206,250)'
 },
