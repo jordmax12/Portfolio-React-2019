@@ -31,12 +31,13 @@ class Home extends React.Component {
                         <Typed
                                 strings={[
                                     'Software Engineer',
-                                    'Full Stack Web Developer',
+                                    'Animal lover',
+                                    'AWS Developer',
+                                    'Blackhawks fan',
                                     'Mobile App Developer',
-                                    'ReactJS Developer',
                                     'Gamer',
-                                    'Blackhawks/Bulls/Whitesox fan',
-                                    'Animal lover']}
+                                    'ReactJS Developer'
+                                    ]}
                                 typeSpeed={40}
                                 backSpeed={50}
                                 ref="typedTarget"

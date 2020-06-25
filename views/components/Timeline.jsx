@@ -19,7 +19,7 @@ class Timeline extends React.Component {
             <React.Fragment>
                 <div style={{ width: '100%', marginRight: 'auto', marginLeft: 'auto', textAlign: 'center', backgroundColor: 'white', padding: '10px 20px' }}>
                     <h3>Projects</h3>
-                    <p>Unfortunately I wasn't able to include all the cool stuff I worked on, but these are some of my favorite projects that I did. </p>
+                    <p>Unfortunately I wasn't able to include all the cool stuff I worked on. </p>
                 </div>
                 <VerticalTimeline>
                     {

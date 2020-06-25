@@ -46,12 +46,33 @@ class Resume extends React.Component {
                                                             <div className="exp">
                                                                 <div className="hgroup" id="fcbResumeItem" style={{ minHeight: '60px' }}>
                                                                     <div className="resumeImage" style={{ float: 'left', width: '60px' }}>
+                                                                        <img src="/syngenta.jpeg"
+                                                                            style={{ width: '50px', height: '50px' }} />
+                                                                    </div>
+                                                                    <div className="resumeItem" style={{ float: 'left' }}>
+                                                                        <h4>Software & Dev Ops Engineer – Syngenta </h4>
+                                                                        <h6><i className="icon-calendar"></i>July 2019 - Present</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <ul>
+                                                                        <li className="lst-disc w100 floatL">Helped facilitate the development and maintaince of AWS Codebuild and CircleCI pipelines, using the Serverless framework and cloudformation templates for infrastructure as code.</li>
+                                                                        <li className="lst-disc w100 floatL">Built a plethora of microservices using AWS lambda functions, api gateways and built seamless external data integrations (salesforce, and other in house API's) utilizing SQS/SNS with lambda triggers via publisher/subscriber design pattern. These microservices were built in a modular fashion and allow for multiple applications to be using them, opposed to API's being tailored for one application, by utilizing OpenAPI and schema validation on destructive (create, update, delete) API calls for both incoming requests and outgoing responses.</li>
+                                                                        <li className="lst-disc w100 floatL">Primary focusing on building re-usable API's, packages and SDK's using nodejs (on occassion python and other languages for fun). Built a front-end private npm package to facilitate as a UI-kit for our front-end teams to build and maintain re-usable react components, authentication system using AWS Cognito and a number of federated identities for SSO, notification system using Twilio and AWS SES, and helped develop normalized database drivers for technologies such as: Neo4J, DynamoDB, and MySQL.</li>
+                                                                        <li className="lst-disc w100 floatL">One of the main DevOps support lines for our entire dev team of 20+ engineers (locally), and helping mentor our junior developers/interns so they can grow and become rockstar developers through pair programming, PR's and "lunch and learns".</li>
+                                                                    </ul>
+                                                                </div>
+
+                                                            </div>
+                                                            <div className="exp">
+                                                                <div className="hgroup" id="fcbResumeItem" style={{ minHeight: '60px' }}>
+                                                                    <div className="resumeImage" style={{ float: 'left', width: '60px' }}>
                                                                         <img src="/FCB_logo.png"
                                                                             style={{ width: '50px', height: '50px' }} />
                                                                     </div>
                                                                     <div className="resumeItem" style={{ float: 'left' }}>
                                                                         <h4>Software Engineer – FCB Chicago </h4>
-                                                                        <h6><i className="icon-calendar"></i>July 2017 - Present</h6>
+                                                                        <h6><i className="icon-calendar"></i>July 2017 - July 2019</h6>
                                                                     </div>
                                                                 </div>
                                                                 <div>
@@ -78,6 +99,7 @@ class Resume extends React.Component {
                                                                 </div>
 
                                                             </div>
+                                                            
                                                             <div className="exp">
                                                                 <div className="hgroup" id="newserResumeItem" style={{ minHeight: '60px' }}>
                                                                     <div className="resumeImage" style={{ width: '60px', float: 'left' }}>

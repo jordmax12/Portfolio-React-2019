@@ -131,11 +131,15 @@ ul {
 }
 
 @media only screen and (min-width: 1170px) {
+    .vertical-timeline-element-date {
+        color: white;
+        font-size: 18px;
+    }
     .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date:nth-child(even) {
         left: 140% !important;
     }
     .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date:nth-child(odd) {
-        left: auto !important;
+        left: 140% !important;
     }
     .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date,
     .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content .vertical-timeline-element-date {
