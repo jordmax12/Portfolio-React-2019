@@ -9,7 +9,7 @@ class Resume extends React.Component {
 
     render() {
         return (
-            <div className="resume-container" style={{ backgroundColor: 'white' }}>
+            <div className="home resume-container" style={{ backgroundColor: 'white' }}>
                 <Grid container>
                     <Grid item md={3}>
                         <div className="resume-me">
@@ -56,8 +56,8 @@ class Resume extends React.Component {
                                                                 </div>
                                                                 <div>
                                                                     <ul>
-                                                                        <li className="lst-disc w100 floatL">Helped facilitate the development and maintaince of AWS Codebuild and CircleCI pipelines, using the Serverless framework and cloudformation templates for infrastructure as code.</li>
-                                                                        <li className="lst-disc w100 floatL">Built a plethora of microservices using AWS lambda functions, api gateways and built seamless external data integrations (salesforce, and other in house API's) utilizing SQS/SNS with lambda triggers via publisher/subscriber design pattern. These microservices were built in a modular fashion and allow for multiple applications to be using them, opposed to API's being tailored for one application, by utilizing OpenAPI and schema validation on destructive (create, update, delete) API calls for both incoming requests and outgoing responses.</li>
+                                                                        <li className="lst-disc w100 floatL">Helped facilitate the development and maintenance of AWS Codebuild and CircleCI pipelines, using the Serverless Framework and cloudformation templates for infrastructure as code.</li>
+                                                                        <li className="lst-disc w100 floatL">Built a plethora of microservices using AWS Lambda functions, api gateways and built seamless external data integrations (salesforce, and other in house API's) utilizing SQS/SNS with lambda triggers via publisher/subscriber design pattern. These microservices were built in a modular fashion and allow for multiple applications to be using them, opposed to API's being tailored for one application, by utilizing OpenAPI and schema validation on destructive (create, update, delete) API calls for both incoming requests and outgoing responses.</li>
                                                                         <li className="lst-disc w100 floatL">Primary focusing on building re-usable API's, packages and SDK's using nodejs (on occassion python and other languages for fun). Built a front-end private npm package to facilitate as a UI-kit for our front-end teams to build and maintain re-usable react components, authentication system using AWS Cognito and a number of federated identities for SSO, notification system using Twilio and AWS SES, and helped develop normalized database drivers for technologies such as: Neo4J, DynamoDB, and MySQL.</li>
                                                                         <li className="lst-disc w100 floatL">One of the main DevOps support lines for our entire dev team of 20+ engineers (locally), and helping mentor our junior developers/interns so they can grow and become rockstar developers through pair programming, PR's and "lunch and learns".</li>
                                                                     </ul>
@@ -80,7 +80,6 @@ class Resume extends React.Component {
                                                                         <li className="lst-disc w100 floatL">Tasked with learning new technologies to find innovative solutions
                                                    to meet the needs of demanding clientele.</li>
                                                                         <li className="lst-disc w100 floatL">Majority of work done in Linux, Express, Mongo/MySQL, NodeJS stack.</li>
-                                                                        <li className="lst-disc w100 floatL">Heavily works with client-owned data storage technologies.</li>
                                                                         <li className="lst-disc w100 floatL">Created and maintains a flagship product being built using AI.
                                                        Securely building the back-end encompassing a secure exposed API,
                                                    third party API integration mini-services, admin portal and more.</li>
@@ -92,9 +91,7 @@ class Resume extends React.Component {
                                                    syntax within tight deadlines.</li>
                                                                         <li className="lst-disc w100 floatL">Mostly used technologies: GraphQL, NodeJS/Express, ES6 Javascript,
                                                                         ReactJS, KeystoneJS, Docker, AWS (ECS, EC2 Load Balancers, Route53,
-                                                   CodePipeline/CodeBuild, SES/SNS/SQS, CodeCommit, IAM, S3 and more)</li>
-                                                                        <li className="lst-disc w100 floatL">Lightly used technologies: .NET/Entity Frameworks, PHP, Golang,
-                                                   Google Cloud Services, Azure Web Services, Alexa</li>
+                                                   CodePipeline/CodeBuild, SES/SNS/SQS, CodeCommit, IAM, S3 and more), Alexa</li>
                                                                     </ul>
                                                                 </div>
 
@@ -194,7 +191,7 @@ class Resume extends React.Component {
                                             </div>
                                         </div>
                                         <div className="mt25 tac">
-                                            <a className="but opc-1 ico" href="https://jdmdev.net/portfolio/Resume.pdf"
+                                            <a className="but opc-1 ico" href="/JordanMaxEngineer-2020.pdf"
                                                 target="_blank"><i className="fa fa-download mr10" aria-hidden="true"></i>Download my cv</a>
                                         </div>
                                     </div>

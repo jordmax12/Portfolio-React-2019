@@ -34,6 +34,7 @@ const wrapper = `<html>
 </body>
 <script src="/main.js"></script>
 <script src="/littleJordan.js"></script>
+<script src="/gradient.js"></script>
 <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
 </html>`
 

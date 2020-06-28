@@ -14,12 +14,13 @@ app.use(express.static(__dirname + '/views/assets/js'));
 app.use(express.static(__dirname + '/views/assets/css'));
 app.use(express.static(__dirname + '/views/assets/img/Little Jordan'));
 app.use(express.static(__dirname + '/views/assets/img/logos'));
+app.use(express.static(__dirname + '/views/assets/pdf'));
 app.use(express.static(__dirname + '/views/assets/img/assets'));
 app.use(bodyParser());
 app.all('/api/sendEmail', (req, res) => {
     console.log(req.body);
     const { firstName, lastName, subject, message } = req.body;
-    
+
     let auth = {
         user: process.env.GMAIL_LOGIN,
         pass: process.env.GMAIL_PW
@@ -39,7 +40,7 @@ app.all('/api/sendEmail', (req, res) => {
         html: `Message from: ${firstName} ${lastName}. <br/><br/> ${message}`
     };
 
-    transporter.sendMail(mailOptions, function(err, info) {
+    transporter.sendMail(mailOptions, function (err, info) {
         if (err)
             console.log(err)
         else
