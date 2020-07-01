@@ -1,13 +1,13 @@
 const projects = [{
-    link: 'https://www.npmjs.com/package/@npmpackageschicago/react-slider-lightbox',
+    link: 'https://www.npmjs.com/package/react-lightbox-slider',
     date: 'June 2020',
-    title: 'react-slider-lightbox',
+    title: 'react-lightbox-slider',
     stack: 'NPM, ReactJS',
     description: 'React component that is a image slider and shows a lightbox if you click on an image.',
     iconClass: 'fab fa-npm projectIcon',
     iconColor: 'rgb(204,53,52)'
 }, {
-    link: 'https://www.npmjs.com/package/@npmpackageschicago/react-barebones-modal',
+    link: 'https://www.npmjs.com/package/react-barebones-modal',
     date: 'June 2020',
     title: 'react-barebondes-modal',
     stack: 'NPM, ReactJS',
