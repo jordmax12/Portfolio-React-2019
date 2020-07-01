@@ -2,7 +2,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import React from 'react';
 import projects from '../assets/projects';
-import Slider from 'react-slider-lightbox';
+import Slider from 'react-lightbox-slider';
 
 class Timeline extends React.Component {
     constructor(props) {
