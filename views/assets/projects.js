@@ -1,4 +1,20 @@
 const projects = [{
+    link: 'https://www.npmjs.com/package/@npmpackageschicago/react-slider-lightbox',
+    date: 'June 2020',
+    title: 'react-slider-lightbox',
+    stack: 'NPM, ReactJS',
+    description: 'React component that is a image slider and shows a lightbox if you click on an image.',
+    iconClass: 'fab fa-npm projectIcon',
+    iconColor: 'rgb(204,53,52)'
+}, {
+    link: 'https://www.npmjs.com/package/@npmpackageschicago/react-barebones-modal',
+    date: 'June 2020',
+    title: 'react-barebondes-modal',
+    stack: 'NPM, ReactJS',
+    description: 'Simple react barebones modal component.',
+    iconClass: 'fab fa-npm projectIcon',
+    iconColor: 'rgb(204,53,52)'
+}, {
     link: '/AlexaMinerProject.png',
     date: '2020',
     title: 'Enogen',
@@ -111,9 +127,9 @@ const projects = [{
 {
     link: 'https://github.com/jordmax12/discordbotesea',
     date: 'January 2019',
-    title: 'ESEA Discord Bot',
+    title: 'Discord Bot',
     stack: 'NodeJS, Heroku',
-    description: 'Utilizing the ESEA api, I made a Discord bot for a friend who had a Discord server of 1,000+ users daily. They used this server to set up scrims and matches in an online game called Counter-Strike. This Discord bot authenticated users and assigned them roles and rights depending on their rank on ESEA.',
+    description: 'Utilizing the CSGO api, I made a Discord bot for a friend who had a Discord server of 1,000+ users daily. They used this server to set up scrims and matches in an online game called Counter-Strike. This Discord bot authenticated users and assigned them roles and rights depending on their rank on ESEA.',
     iconClass: 'fab fa-js-square projectIcon',
     iconColor: 'rgb(135,206,250)'
 },
