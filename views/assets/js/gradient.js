@@ -71,4 +71,4 @@ function updateGradient() {
   }
 }
 
-setInterval(updateGradient, 10);
+// setInterval(updateGradient, 10);

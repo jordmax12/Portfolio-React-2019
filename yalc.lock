@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "react-lightbox-slider": {
+      "signature": "9d46578ccea250ec4b8d918e1b30f180",
+      "file": true
+    }
+  }
+}
