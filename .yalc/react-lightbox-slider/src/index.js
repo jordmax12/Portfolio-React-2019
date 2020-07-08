@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Modal from 'react-barebones-modal'
+import uuid from 'react-uuid';
 import './src/index.css'
 
 const Slider = ({
   ref,
   images: _images,
   modalImages: _modalImages,
-  minHeight,
+  minSlideHeight,
   sliderMaxWidth
 }) => {
   const [images, setImages] = useState(_images || []);
@@ -40,7 +41,9 @@ const Slider = ({
   }, []);
 
   const slideWidth = (isModal) => {
-    return document.querySelector(isModal ? '.modal-slide' : '.slide').clientWidth
+    const width = document.querySelector(isModal ? '.modal-slide' : '.slide').clientWidth;
+    console.log('loggind width', width);
+    return width;
   }
 
   const goToPrevSlide = (reactClass, isModal) => {
@@ -81,7 +84,9 @@ const Slider = ({
     }
     if (isModal) {
       setCurrentIndexModal(currentIndexModal + 1);
-      setTranslateValueModal(translateValueModal + -(slideWidth(true)));
+      const newTranslateValue = translateValueModal + -(slideWidth(true));
+      console.log('logging newTranslateValue', newTranslateValue);
+      setTranslateValueModal(newTranslateValue);
       setSliderWidth(slideWidth());
     } else {
       setCurrentIndex(currentIndex + 1);
@@ -89,14 +94,8 @@ const Slider = ({
     }
   }
 
-  const Slide = ({ image, onClickHandler, applyMinHeight, isModal }) => {
+  const Slide = ({ image, index, applyMinHeight, isModal }) => {
     let styles = {
-      // backgroundImage: `url(${image})`,
-      // backgroundSize: 'contain',
-      // backgroundRepeat: 'no-repeat',
-      // backgroundPosition: '50% 60%',
-      // height: 'auto',
-      // width: '100%'
       display: 'block',
       marginLeft: 'auto',
       marginRight: 'auto',
@@ -111,18 +110,10 @@ const Slider = ({
       styles['maxWidth'] = sliderMaxWidth;
     }
 
-    if (applyMinHeight && minHeight) styles['minHeight'] = 'minHeight';
-    return <div className={isModal ? 'modal-slide' : 'slide'} style={{ width: '100%', position: 'relative' }}>
-      <img className={isModal ? 'modal-slider-image' : 'slider-image'} onClick={onClickHandler ? onClickHandler : null} src={image} style={styles} />
+    if (applyMinHeight && minSlideHeight) styles['minHeight'] = minSlideHeight;
+    return <div key={`slide-${uuid()}`} className={isModal ? 'modal-slide' : 'slide'} style={{ width: '100%', position: 'relative' }}>
+      <img className={isModal ? 'modal-slider-image' : 'slider-image'} onClick={index > -1 ? () => handleImageClick(index) : null} src={image} style={styles} />
     </div>
-    // return <div className="slide" style={{ width: '100%', position: 'relative' }}>
-    //   <div onClick={onClickHandler ? onClickHandler : null} style={styles}>
-    //     <img src={image} style={{ visibility: 'hidden', width: '100%' }} />
-    //   </div>
-    // </div>
-    // return <div style={styles}><img onClick={onClickHandler ? onClickHandler : null} src={image} /></div>
-    // return <></>
-    // return <div className="slide" onClick={onClickHandler ? onClickHandler : null} style={styles} />
   }
 
 
@@ -157,20 +148,25 @@ const Slider = ({
       'modal-slider-image'
     ]
 
-    console.log('here??')
     const foundClassNames = [];
 
     allowList.forEach(a => {
-      console.log(e.target.className);
-      console.log('logging a', a);
       const classNames = e.target.className.split(' ');
-      console.log('logging classNames', classNames);
       const find = classNames.filter(c => c.indexOf(a) > -1);
-      console.log('logging find', find);
       if (find.length > 0) foundClassNames.push(a);
     })
-    console.log('logging foundClassNames', foundClassNames);
     if (foundClassNames.length === 0) setShowModal(false);
+  }
+
+  const handleImageClick = (index = 0) => {
+    console.log('here???')
+    setShowModal(true);
+    setCurrentIndexModal(index);
+    const newTranslateValue = index * -(800);
+
+    setTranslateValueModal(newTranslateValue);
+    console.log('logging translateValueModal', translateValueModal, 'logging index', index, 'logging newTranslateValue', newTranslateValue)
+
   }
 
   return (
@@ -204,21 +200,6 @@ const Slider = ({
         </div>
       </Modal>
       <div className="slider" style={{ width: showModal ? `${sliderWidth}px` : '800px' }}>
-        {/* <Modal
-      customClassName={`w80% mawa bgc-t t50 posa ofh`}
-      show={showModal}>
-      <div className="slider-wrapper"
-        style={{
-          transform: `translateX(${translateValue}px)`,
-          transition: 'transform ease-out 0.45s'
-        }}>
-        {
-          images.map((image, i) => (
-            <Slide applyMinHeight key={`modal-${i}`} image={image} />
-          ))
-        }
-      </div>
-    </Modal> */}
         <div className="slider-wrapper"
           style={{
             transform: `translateX(${translateValue}px)`,
@@ -226,7 +207,7 @@ const Slider = ({
           }}>
           {
             images.map((image, i) => (
-              <Slide onClickHandler={() => setShowModal(true)} key={i} image={image} />
+              <Slide index={i} key={i} image={image} />
             ))
           }
         </div>

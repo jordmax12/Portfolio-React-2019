@@ -11,6 +11,8 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _reactBarebonesModal = _interopRequireDefault(require("react-barebones-modal"));
 
+var _reactUuid = _interopRequireDefault(require("react-uuid"));
+
 require("./src/index.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -35,7 +37,7 @@ var Slider = function Slider(_ref) {
   var ref = _ref.ref,
       _images = _ref.images,
       _modalImages = _ref.modalImages,
-      minHeight = _ref.minHeight,
+      minSlideHeight = _ref.minSlideHeight,
       sliderMaxWidth = _ref.sliderMaxWidth;
 
   var _useState = (0, _react.useState)(_images || []),
@@ -98,7 +100,9 @@ var Slider = function Slider(_ref) {
   }, []);
 
   var slideWidth = function slideWidth(isModal) {
-    return document.querySelector(isModal ? '.modal-slide' : '.slide').clientWidth;
+    var width = document.querySelector(isModal ? '.modal-slide' : '.slide').clientWidth;
+    console.log('loggind width', width);
+    return width;
   };
 
   var _goToPrevSlide = function goToPrevSlide(reactClass, isModal) {
@@ -147,7 +151,9 @@ var Slider = function Slider(_ref) {
 
     if (isModal) {
       setCurrentIndexModal(currentIndexModal + 1);
-      setTranslateValueModal(translateValueModal + -slideWidth(true));
+      var newTranslateValue = translateValueModal + -slideWidth(true);
+      console.log('logging newTranslateValue', newTranslateValue);
+      setTranslateValueModal(newTranslateValue);
       setSliderWidth(slideWidth());
     } else {
       setCurrentIndex(currentIndex + 1);
@@ -157,16 +163,10 @@ var Slider = function Slider(_ref) {
 
   var Slide = function Slide(_ref2) {
     var image = _ref2.image,
-        onClickHandler = _ref2.onClickHandler,
+        index = _ref2.index,
         applyMinHeight = _ref2.applyMinHeight,
         isModal = _ref2.isModal;
     var styles = {
-      // backgroundImage: `url(${image})`,
-      // backgroundSize: 'contain',
-      // backgroundRepeat: 'no-repeat',
-      // backgroundPosition: '50% 60%',
-      // height: 'auto',
-      // width: '100%'
       display: 'block',
       marginLeft: 'auto',
       marginRight: 'auto',
@@ -181,8 +181,9 @@ var Slider = function Slider(_ref) {
       styles['maxWidth'] = sliderMaxWidth;
     }
 
-    if (applyMinHeight && minHeight) styles['minHeight'] = 'minHeight';
+    if (applyMinHeight && minSlideHeight) styles['minHeight'] = minSlideHeight;
     return /*#__PURE__*/_react.default.createElement("div", {
+      key: "slide-".concat((0, _reactUuid.default)()),
       className: isModal ? 'modal-slide' : 'slide',
       style: {
         width: '100%',
@@ -190,17 +191,12 @@ var Slider = function Slider(_ref) {
       }
     }, /*#__PURE__*/_react.default.createElement("img", {
       className: isModal ? 'modal-slider-image' : 'slider-image',
-      onClick: onClickHandler ? onClickHandler : null,
+      onClick: index > -1 ? function () {
+        return handleImageClick(index);
+      } : null,
       src: image,
       style: styles
-    })); // return <div className="slide" style={{ width: '100%', position: 'relative' }}>
-    //   <div onClick={onClickHandler ? onClickHandler : null} style={styles}>
-    //     <img src={image} style={{ visibility: 'hidden', width: '100%' }} />
-    //   </div>
-    // </div>
-    // return <div style={styles}><img onClick={onClickHandler ? onClickHandler : null} src={image} /></div>
-    // return <></>
-    // return <div className="slide" onClick={onClickHandler ? onClickHandler : null} style={styles} />
+    }));
   };
 
   var LeftArrow = function LeftArrow(props) {
@@ -229,21 +225,25 @@ var Slider = function Slider(_ref) {
 
   var modalClickHandler = function modalClickHandler(e) {
     var allowList = ['arrow', 'fa-arrow-right', 'fa-arrow-left', 'modal-slider-image'];
-    console.log('here??');
     var foundClassNames = [];
     allowList.forEach(function (a) {
-      console.log(e.target.className);
-      console.log('logging a', a);
       var classNames = e.target.className.split(' ');
-      console.log('logging classNames', classNames);
       var find = classNames.filter(function (c) {
         return c.indexOf(a) > -1;
       });
-      console.log('logging find', find);
       if (find.length > 0) foundClassNames.push(a);
     });
-    console.log('logging foundClassNames', foundClassNames);
     if (foundClassNames.length === 0) setShowModal(false);
+  };
+
+  var handleImageClick = function handleImageClick() {
+    var index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+    console.log('here???');
+    setShowModal(true);
+    setCurrentIndexModal(index);
+    var newTranslateValue = index * -800;
+    setTranslateValueModal(newTranslateValue);
+    console.log('logging translateValueModal', translateValueModal, 'logging index', index, 'logging newTranslateValue', newTranslateValue);
   };
 
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_reactBarebonesModal.default, {
@@ -296,9 +296,7 @@ var Slider = function Slider(_ref) {
     }
   }, images.map(function (image, i) {
     return /*#__PURE__*/_react.default.createElement(Slide, {
-      onClickHandler: function onClickHandler() {
-        return setShowModal(true);
-      },
+      index: i,
       key: i,
       image: image
     });

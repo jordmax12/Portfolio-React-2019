@@ -1,11 +1,12 @@
 {
   "name": "react-lightbox-slider",
-  "version": "1.0.7-9d46578c",
+  "version": "1.0.15-f4b6f1a7",
   "scripts": {
     "build": "./node_modules/.bin/babel src --out-file index.js"
   },
   "dependencies": {
-    "react-barebones-modal": "^1.0.11"
+    "react-barebones-modal": "^1.0.11",
+    "react-uuid": "^1.0.2"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
