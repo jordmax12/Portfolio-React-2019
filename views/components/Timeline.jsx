@@ -34,9 +34,7 @@ class Timeline extends React.Component {
                     <h3>Projects</h3>
                     <p>Unfortunately I wasn't able to include all the cool stuff I worked on. </p>
                 </div>
-                <Slider 
-                sliderMaxWidth='400px'
-                images={image_array} />
+
                 <VerticalTimeline>
                     {
                         projects.map((project, i) => {
@@ -46,9 +44,12 @@ class Timeline extends React.Component {
                                 iconStyle={{ background: project.iconColor, color: '#fff' }}
                                 icon={<div className="tac"><i className={project.iconClass}></i></div>}
                             >
-                                <h3 className="vertical-timeline-element-title">{ project.link.length > 0 ? <a href={project.link} target="__blank">{project.title}</a> : <span>{project.title}</span>}</h3>
-                                <h4 className="vertical-timeline-element-subtitle mt10">{project.stack}</h4>
-                                <p> {project.description}</p>
+                                <div>
+                                    <h3 className="vertical-timeline-element-title">{ project.link.length > 0 ? <a href={project.link} target="__blank">{project.title}</a> : <span>{project.title}</span>}</h3>
+                                    <h4 className="vertical-timeline-element-subtitle mt10">{project.stack}</h4>
+                                    <p> {project.description}</p>
+                                </div>
+
                             </VerticalTimelineElement></React.Fragment>
                         })
                     }
