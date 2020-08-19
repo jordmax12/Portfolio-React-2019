@@ -71,7 +71,7 @@ const projects = [{
     iconClass: 'fab fa-react projectIcon',
     iconColor: 'rgb(97,218,251)'
 }, {
-    link: '/AgriedgeAppArchitechture.pdf',
+    link: '/AgriedgeAppArchitecture.pdf',
     date: 'July 2019 - Feburary 2020',
     title: 'Agriedge (Back End)',
     stack: 'NodeJS, AWS Lambda, AWS ApiGateway, AWS RDS, Serverless Framework.',
@@ -79,7 +79,7 @@ const projects = [{
     iconClass: 'fab fa-aws projectIcon',
     iconColor: 'rgb(255,153,0)'
 }, {
-    link: '/Argiedge 2.png',
+    link: '/Argiedge2.png',
     date: 'July 2019 - Feburary 2020',
     title: 'Agriedge (Front End)',
     stack: 'ReactJS, AWS S3, AWS Cloudfront, CSS, HTML.',
