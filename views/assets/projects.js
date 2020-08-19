@@ -23,7 +23,7 @@ const projects = [{
     iconClass: 'fab fa-npm projectIcon',
     iconColor: 'rgb(204,53,52)'
 }, {
-    link: '/AlexaMinerProject.png',
+    link: '/Enogen.pdf',
     date: '2020',
     title: 'Enogen',
     stack: 'NodeJS, AWS Lambda, AWS ApiGateway, AWS SQS, AWS SNS, AWS DynamoDB',
@@ -31,7 +31,6 @@ const projects = [{
     iconClass: 'fab fa-aws projectIcon',
     iconColor: 'rgb(255,153,0)'
 }, {
-    link: '/AlexaMinerProject.png',
     date: 'June 2020',
     title: 'Syngenta PDF Generator',
     stack: 'NodeJS, AWS Lambda, AWS ApiGateway',
@@ -39,7 +38,6 @@ const projects = [{
     iconClass: 'fab fa-js-square projectIcon',
     iconColor: 'rgb(135,206,250)'
 }, {
-    link: '/AlexaMinerProject.png',
     date: 'June 2020',
     title: 'Neo4J Database Driver/Versioner',
     stack: 'NodeJS, Neo4J',
@@ -47,7 +45,7 @@ const projects = [{
     iconClass: 'fab fa-js-square projectIcon',
     iconColor: 'rgb(135,206,250)'
 }, {
-    link: '/AlexaMinerProject.png',
+    link: '/PlatformAuthFlows.pdf',
     date: 'May 2020',
     title: 'Syngenta Authentication API',
     stack: 'NodeJS, AWS Lambda, AWS ApiGateway, AWS Cognito, AWS DynamoDB',
@@ -55,7 +53,6 @@ const projects = [{
     iconClass: 'fab fa-aws projectIcon',
     iconColor: 'rgb(255,153,0)'
 }, {
-    link: '/AlexaMinerProject.png',
     date: 'May 2020',
     title: 'Syngenta Notifications API',
     stack: 'NodeJS, AWS Lambda, AWS ApiGateway, AWS SES, Twilio, AWS SQS, AWS DynamoDB',
@@ -63,7 +60,7 @@ const projects = [{
     iconClass: 'fab fa-aws projectIcon',
     iconColor: 'rgb(255,153,0)'
 }, {
-    link: '/AlexaMinerProject.png',
+    link: 'https://dev-uikit.syndpe.com',
     date: 'December 2019',
     title: 'Syngenta UI Kit',
     stack: 'ReactJS',
@@ -71,7 +68,7 @@ const projects = [{
     iconClass: 'fab fa-react projectIcon',
     iconColor: 'rgb(97,218,251)'
 }, {
-    link: '/AlexaMinerProject.png',
+    link: '/AgriedgeAppArchitechture.pdf',
     date: 'July 2019 - Feburary 2020',
     title: 'Agriedge (Back End)',
     stack: 'NodeJS, AWS Lambda, AWS ApiGateway, AWS RDS, Serverless Framework.',
@@ -79,7 +76,7 @@ const projects = [{
     iconClass: 'fab fa-aws projectIcon',
     iconColor: 'rgb(255,153,0)'
 }, {
-    link: '/AlexaMinerProject.png',
+    link: '/Argiedge 2.png',
     date: 'July 2019 - Feburary 2020',
     title: 'Agriedge (Front End)',
     stack: 'ReactJS, AWS S3, AWS Cloudfront, CSS, HTML.',
