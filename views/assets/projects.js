@@ -31,6 +31,7 @@ const projects = [{
     iconClass: 'fab fa-aws projectIcon',
     iconColor: 'rgb(255,153,0)'
 }, {
+    link: '',
     date: 'June 2020',
     title: 'Syngenta PDF Generator',
     stack: 'NodeJS, AWS Lambda, AWS ApiGateway',
@@ -38,6 +39,7 @@ const projects = [{
     iconClass: 'fab fa-js-square projectIcon',
     iconColor: 'rgb(135,206,250)'
 }, {
+    link: '',
     date: 'June 2020',
     title: 'Neo4J Database Driver/Versioner',
     stack: 'NodeJS, Neo4J',
@@ -53,6 +55,7 @@ const projects = [{
     iconClass: 'fab fa-aws projectIcon',
     iconColor: 'rgb(255,153,0)'
 }, {
+    link: '',
     date: 'May 2020',
     title: 'Syngenta Notifications API',
     stack: 'NodeJS, AWS Lambda, AWS ApiGateway, AWS SES, Twilio, AWS SQS, AWS DynamoDB',
