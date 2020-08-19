@@ -1,9 +1,17 @@
-const projects = [{
+const projects = [ {
+    link: '/Enogen.pdf',
+    date: 'Jan 2020 - Present',
+    title: 'Enogen',
+    stack: 'NodeJS, AWS Lambda, AWS ApiGateway, AWS SQS, AWS SNS, AWS DynamoDB',
+    description: 'Built a series of microservices which services multiple applications interacting with modularized api\'s. This was a product being used by a multitude of our teams and is involved with millions of dollars of transactions a year.',
+    iconClass: 'fab fa-aws projectIcon',
+    iconColor: 'rgb(255,153,0)'
+},{
     link: 'https://www.npmjs.com/package/generator-serverless-j',
     date: 'August 2020',
     title: 'generator-serverless-j',
     stack: 'NodeJS, Serverless',
-    description: 'IN PROGRESS - building a CLI tool to generate serverless files, ability to have .yml file to construct models and all the resources and apigateway resources you\'d need.',
+    description: 'IN PROGRESS - building a CLI tool to generate serverless files, ability to have config.yml file to construct models and all the resources and apigateway resources you\'d need.',
     iconClass: 'fab fa-npm projectIcon',
     iconColor: 'rgb(204,53,52)'
 },{
@@ -22,14 +30,6 @@ const projects = [{
     description: 'Simple react barebones modal component.',
     iconClass: 'fab fa-npm projectIcon',
     iconColor: 'rgb(204,53,52)'
-}, {
-    link: '/Enogen.pdf',
-    date: '2020',
-    title: 'Enogen',
-    stack: 'NodeJS, AWS Lambda, AWS ApiGateway, AWS SQS, AWS SNS, AWS DynamoDB',
-    description: 'Built a series of microservices which services multiple applications interacting with modularized api\'s. This was a product being used by a multitude of our teams and is involved with millions of dollars of transactions a year.',
-    iconClass: 'fab fa-aws projectIcon',
-    iconColor: 'rgb(255,153,0)'
 }, {
     link: '',
     date: 'June 2020',
