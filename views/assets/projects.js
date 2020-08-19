@@ -1,4 +1,12 @@
 const projects = [{
+    link: 'https://www.npmjs.com/package/generator-serverless-j',
+    date: 'August 2020',
+    title: 'generator-serverless-j',
+    stack: 'NodeJS, Serverless',
+    description: 'IN PROGRESS - building a CLI tool to generate serverless files, ability to have .yml file to construct models and all the resources and apigateway resources you\'d need.',
+    iconClass: 'fab fa-npm projectIcon',
+    iconColor: 'rgb(204,53,52)'
+},{
     link: 'https://www.npmjs.com/package/react-lightbox-slider',
     date: 'June 2020',
     title: 'react-lightbox-slider',
