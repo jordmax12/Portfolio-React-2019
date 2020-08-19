@@ -50,7 +50,7 @@ class Resume extends React.Component {
                                                                             style={{ width: '50px', height: '50px' }} />
                                                                     </div>
                                                                     <div className="resumeItem" style={{ float: 'left' }}>
-                                                                        <h4>Software & Dev Ops Engineer – Syngenta </h4>
+                                                                        <h4>Sr Software & Dev Ops Engineer – Syngenta </h4>
                                                                         <h6><i className="icon-calendar"></i>July 2019 - Present</h6>
                                                                     </div>
                                                                 </div>
