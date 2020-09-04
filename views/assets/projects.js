@@ -3,8 +3,8 @@ const projects = [
         link: 'https://dev-documentation.syndpe.com/',
         date: 'September 2020',
         title: 'Syngenta Documentation (Front-End, Back-End)',
-        stack: 'NPM, AWS Lambda, AWS ApiGateway, CircleCI',
-        description: 'To automate a way to take in all of our API\'s OpenAPI schema, convert it to HTML, and then publish it to S3. I also created an API to read this S3 bucket, and essentially gather a list of available projects, and created a front-end project to consume them. Each time we build one of our API projects, I created an npm package to automatically find your OpenAPI file, and send it to our backend API as described earlier. This will set off the trigger in our publisher/subscriber design pattern to do the steps laid out earlier.',
+        stack: 'NPM, AWS Lambda, AWS ApiGateway, AWS S3, CircleCI',
+        description: 'This project is a way for our API projects to automatically publish each of their OpenAPI schema files. I made a NPM package, which is built into our CICD process, to find your openAPI file, convert it to json and send it to an API I made. I have a publisher/subscriber design pattern impltemented which listens for new OpenAPI files, and when it detects a new one will convert it to HTML and publish it to an S3 bucket. I also created a front end (link above) that consumes this HTML and displays it for a user.',
         iconClass: 'fab fa-npm projectIcon',
         iconColor: 'rgb(255,153,0)'
     },
