@@ -1,7 +1,17 @@
-const projects = [ {
+const projects = [
+    {
+        link: 'https://dev-documentation.syndpe.com/',
+        date: 'September 2020',
+        title: 'Syngenta Documentation (Front-End, Back-End)',
+        stack: 'NPM, AWS Lambda, AWS ApiGateway, CircleCI',
+        description: 'To automate a way to take in all of our API\'s OpenAPI schema, convert it to HTML, and then publish it to S3. I also created an API to read this S3 bucket, and essentially gather a list of available projects, and created a front-end project to consume them. Each time we build one of our API projects, I created an npm package to automatically find your OpenAPI file, and send it to our backend API as described earlier. This will set off the trigger in our publisher/subscriber design pattern to do the steps laid out earlier.',
+        iconClass: 'fab fa-npm projectIcon',
+        iconColor: 'rgb(255,153,0)'
+    },
+    {
     link: '/Enogen.pdf',
-    date: 'Jan 2020 - Present',
-    title: 'Enogen',
+    date: 'January 2020 - Present',
+    title: 'Enogen (With Syngenta)',
     stack: 'NodeJS, AWS Lambda, AWS ApiGateway, AWS SQS, AWS SNS, AWS DynamoDB',
     description: 'Built a series of microservices which services multiple applications interacting with modularized api\'s. This was a product being used by a multitude of our teams and is involved with millions of dollars of transactions a year.',
     iconClass: 'fab fa-aws projectIcon',
@@ -11,7 +21,7 @@ const projects = [ {
     date: 'August 2020',
     title: 'generator-serverless-j',
     stack: 'NodeJS, Serverless',
-    description: 'IN PROGRESS - building a CLI tool to generate serverless files, ability to have config.yml file to construct models and all the resources and apigateway resources you\'d need.',
+    description: 'Building a CLI tool to generate serverless files, ability to have config.yml file to construct models and all the resources and apigateway resources you\'d need.',
     iconClass: 'fab fa-npm projectIcon',
     iconColor: 'rgb(204,53,52)'
 },{
@@ -41,7 +51,7 @@ const projects = [ {
 }, {
     link: '',
     date: 'June 2020',
-    title: 'Neo4J Database Driver/Versioner',
+    title: 'Neo4J Database Driver/Versioner (With Syngenta)',
     stack: 'NodeJS, Neo4J',
     description: 'Private NPM package that allowed our developers to safely and securely make Neo4J graph database queries. It also includes a versioner which allows the user to deploy to multiple environments and sequentially run queries from a user defined directory that would house the schema and data creation scripts. This would guarantee that any changes made to schema or custom data can be historically referenced and executed just as it did on the original database. We also included a method to allow us to guarantee no hardcode access by managing the users and passwords and storing a random password for root user in a KMS.',
     iconClass: 'fab fa-js-square projectIcon',
@@ -73,7 +83,7 @@ const projects = [ {
 }, {
     link: '/AgriedgeAppArchitecture.pdf',
     date: 'July 2019 - Feburary 2020',
-    title: 'Agriedge (Back End)',
+    title: 'Agriedge (Back End, With Syngenta)',
     stack: 'NodeJS, AWS Lambda, AWS ApiGateway, AWS RDS, Serverless Framework.',
     description: 'Agriedge Calculator Tool was a tool designed to help sales reps and growers figure out how to get the most rebate out of their purchases, designed specifically to look at soil conditions, weather patterns..etc to recommend the best product, which then would give them a better rebate.',
     iconClass: 'fab fa-aws projectIcon',
@@ -81,7 +91,7 @@ const projects = [ {
 }, {
     link: '/Argiedge2.png',
     date: 'July 2019 - Feburary 2020',
-    title: 'Agriedge (Front End)',
+    title: 'Agriedge (Front End, With Syngenta)',
     stack: 'ReactJS, AWS S3, AWS Cloudfront, CSS, HTML.',
     description: 'Agriedge Calculator Tool was a tool designed to help sales reps and growers figure out how to get the most rebate out of their purchases, designed specifically to look at soil conditions, weather patterns..etc to recommend the best product, which then would give them a better rebate.',
     iconClass: 'fab fa-react projectIcon',
