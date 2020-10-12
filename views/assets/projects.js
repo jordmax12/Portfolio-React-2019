@@ -13,7 +13,7 @@ const projects = [
         date: 'September 2020',
         title: 'Syngenta Database Driver Adapter',
         stack: 'NodeJS, Neo4J, DynamoDB, MySQL, Postgres',
-        description: 'This package was originallu built as a multi-engine database driver for dynamodb, neo4j, mysql and postgres for use of our internal teams. We open sourced this package for public consumption as well.',
+        description: 'This package was originally built as a multi-engine database driver for dynamodb, neo4j, mysql and postgres for use of our internal teams. We open sourced this package for public consumption as well.',
         iconClass: 'fab fa-js-square projectIcon',
         iconColor: 'rgb(255,153,0)'
     },
