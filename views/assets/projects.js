@@ -1,5 +1,23 @@
 const projects = [
     {
+        link: 'https://www.npmjs.com/package/@syngenta-digital/generator-syngenta-serverless',
+        date: 'September/October 2020',
+        title: 'Serverless Generator CLI Tool (v2)',
+        stack: 'NPM, Yeoman, AWS Lambda, AWS ApiGateway, AWS S3, CircleCI',
+        description: 'This project was originally built as a CLI tool for all of our internal engineers from all teams across the globe to use. We also decided to open-source this generator for public use as well.',
+        iconClass: 'fab fa-npm projectIcon',
+        iconColor: 'rgb(255,153,0)'
+    },
+    {
+        link: 'https://www.npmjs.com/package/@syngenta-digital/data-adapter',
+        date: 'September 2020',
+        title: 'Syngenta Database Driver Adapter',
+        stack: 'NodeJS, Neo4J, DynamoDB, MySQL, Postgres',
+        description: 'This package was originallu built as a multi-engine database driver for dynamodb, neo4j, mysql and postgres for use of our internal teams. We open sourced this package for public consumption as well.',
+        iconClass: 'fab fa-js-square projectIcon',
+        iconColor: 'rgb(255,153,0)'
+    },
+    {
         link: 'https://dev-documentation.syndpe.com/',
         date: 'September 2020',
         title: 'Syngenta Documentation (Front-End, Back-End)',
