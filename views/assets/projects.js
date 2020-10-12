@@ -1,5 +1,5 @@
 const projects = [
-    {
+{
         link: 'https://www.npmjs.com/package/@syngenta-digital/generator-serverless',
         date: 'September/October 2020',
         title: 'Serverless Generator CLI Tool (v2)',
@@ -7,17 +7,15 @@ const projects = [
         description: 'This project was originally built as a CLI tool for all of our internal engineers from all teams across the globe to use. We also decided to open-source this generator for public use as well.',
         iconClass: 'fab fa-npm projectIcon',
         iconColor: 'rgb(204,53,52)'
-    },
-    {
+},{
         link: 'https://www.npmjs.com/package/@syngenta-digital/data-adapter',
         date: 'September 2020',
         title: 'Syngenta Database Driver Adapter',
         stack: 'NodeJS, Neo4J, DynamoDB, MySQL, Postgres',
         description: 'This package was originally built as a multi-engine database driver for dynamodb, neo4j, mysql and postgres for use of our internal teams. We open sourced this package for public consumption.',
         iconClass: 'fab fa-js-square projectIcon',
-        iconColor: 'rgb(255,153,0)'
-    },
-    {
+        iconColor: 'rgb(135,206,250)'
+},{
         link: 'https://dev-documentation.syndpe.com/',
         date: 'September 2020',
         title: 'Syngenta Documentation (Front-End, Back-End)',
@@ -25,8 +23,7 @@ const projects = [
         description: 'This project is a way for our API projects to automatically publish each of their OpenAPI schema files. I made a NPM package, which is built into our CICD process, to find your openAPI file, convert it to json and send it to an API I made. I have a publisher/subscriber design pattern impltemented which listens for new OpenAPI files, and when it detects a new one will convert it to HTML and publish it to an S3 bucket. I also created a front end (link above) that consumes this HTML and displays it for a user.',
         iconClass: 'fab fa-npm projectIcon',
         iconColor: 'rgb(204,53,52)'
-    },
-    {
+},{
     link: '/Enogen.pdf',
     date: 'January 2020 - Present',
     title: 'Enogen (With Syngenta)',
