@@ -1,6 +1,6 @@
 const projects = [
     {
-        link: 'https://www.npmjs.com/package/@syngenta-digital/generator-syngenta-serverless',
+        link: 'https://www.npmjs.com/package/@syngenta-digital/generator-serverless',
         date: 'September/October 2020',
         title: 'Serverless Generator CLI Tool (v2)',
         stack: 'NPM, Yeoman, AWS Lambda, AWS ApiGateway, AWS S3, AWS SNS, AWS SQS, AWS Elasticsearch, AWS Dynamodb, AWS RDS (Postgres & Mysql)',
