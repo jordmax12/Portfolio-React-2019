@@ -8,13 +8,21 @@ const projects = [
         iconClass: 'fab fa-npm projectIcon',
         iconColor: 'rgb(204,53,52)'
 },{
-        link: 'https://www.npmjs.com/package/@syngenta-digital/data-adapter',
-        date: 'September 2020',
+        link: 'https://www.npmjs.com/package/@syngenta-digital/dta',
+        date: '2020',
         title: 'Syngenta Database Driver Adapter',
         stack: 'NodeJS, Neo4J, DynamoDB, MySQL, Postgres',
         description: 'This package was originally built as a multi-engine database driver for dynamodb, neo4j, mysql and postgres for use of our internal teams. We open sourced this package for public consumption.',
-        iconClass: 'fab fa-js-square projectIcon',
-        iconColor: 'rgb(135,206,250)'
+        iconClass: 'fab fa-npm projectIcon',
+        iconColor: 'rgb(204,53,52)'
+},{
+    link: 'https://www.npmjs.com/package/@syngenta-digital/alc',
+    date: '2020',
+    title: 'Syngenta Lambda Router',
+    stack: 'NodeJS, AWS Lambda',
+    description: 'Custom routing for Lambda functions. Originally a private package that we used to handle routing, request and response body parsing and openapi schema validation on our endpoints. We have opoen sourced this package.',
+    iconClass: 'fab fa-npm projectIcon',
+    iconColor: 'rgb(204,53,52)'
 },{
         link: 'https://dev-documentation.syndpe.com/',
         date: 'September 2020',
