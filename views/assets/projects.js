@@ -16,14 +16,6 @@ const projects = [
         iconClass: 'fab fa-npm projectIcon',
         iconColor: 'rgb(204,53,52)'
 },{
-    link: 'https://www.npmjs.com/package/@syngenta-digital/alc',
-    date: '2020',
-    title: 'Syngenta Lambda Router',
-    stack: 'NodeJS, AWS Lambda',
-    description: 'Custom routing for Lambda functions. Originally a private package that we used to handle routing, request and response body parsing and openapi schema validation on our endpoints. We have opoen sourced this package.',
-    iconClass: 'fab fa-npm projectIcon',
-    iconColor: 'rgb(204,53,52)'
-},{
         link: 'https://dev-documentation.syndpe.com/',
         date: 'September 2020',
         title: 'Syngenta Documentation (Front-End, Back-End)',
