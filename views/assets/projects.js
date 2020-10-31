@@ -96,7 +96,7 @@ const projects = [
     iconClass: 'fab fa-aws projectIcon',
     iconColor: 'rgb(255,153,0)'
 }, {
-    link: '/Argiedge2.png',
+    link: '/Agriedge2.png',
     date: 'July 2019 - Feburary 2020',
     title: 'Agriedge (Front End, with Syngenta)',
     stack: 'ReactJS, AWS S3, AWS Cloudfront, CSS, HTML.',
