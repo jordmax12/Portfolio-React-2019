@@ -10,13 +10,13 @@ const projects = [
 },{
         link: 'https://www.npmjs.com/package/@syngenta-digital/dta',
         date: '2020',
-        title: 'Syngenta Database Driver Adapter',
+        title: 'Syngenta Database Driver Adapter (*contributions)',
         stack: 'NodeJS, Neo4J, DynamoDB, MySQL, Postgres',
         description: 'This package was originally built as a multi-engine database driver for dynamodb, neo4j, mysql and postgres for use of our internal teams. We open sourced this package for public consumption.',
         iconClass: 'fab fa-npm projectIcon',
         iconColor: 'rgb(204,53,52)'
 },{
-        link: 'https://dev-documentation.syndpe.com/',
+        link: 'https://documentation.syndpe.com/',
         date: 'September 2020',
         title: 'Syngenta Documentation (Front-End, Back-End)',
         stack: 'NPM, AWS Lambda, AWS ApiGateway, AWS S3, CircleCI',
@@ -58,23 +58,15 @@ const projects = [
 }, {
     link: '',
     date: 'June 2020',
-    title: 'Syngenta PDF Generator',
+    title: 'Enogen PDF Generator (with Syngenta)',
     stack: 'NodeJS, AWS Lambda, AWS ApiGateway',
     description: 'Private API which allowed a user to submit a HTML string, or a base64 encoded string and convert it to a PDF. This was originally built as the mechanism that generated all the contracts between our company and our customers, which I also modularized and made into a re-usable API for other applications.',
     iconClass: 'fab fa-js-square projectIcon',
     iconColor: 'rgb(135,206,250)'
 }, {
-    link: '',
-    date: 'June 2020',
-    title: 'Neo4J Database Driver/Versioner (With Syngenta)',
-    stack: 'NodeJS, Neo4J',
-    description: 'Private NPM package that allowed our developers to safely and securely make Neo4J graph database queries. It also includes a versioner which allows the user to deploy to multiple environments and sequentially run queries from a user defined directory that would house the schema and data creation scripts. This would guarantee that any changes made to schema or custom data can be historically referenced and executed just as it did on the original database. We also included a method to allow us to guarantee no hardcode access by managing the users and passwords and storing a random password for root user in a KMS.',
-    iconClass: 'fab fa-js-square projectIcon',
-    iconColor: 'rgb(135,206,250)'
-}, {
     link: '/PlatformAuthFlows.pdf',
     date: 'May 2020',
-    title: 'Syngenta Authentication API',
+    title: 'Enogen Authentication API (with Syngenta)',
     stack: 'NodeJS, AWS Lambda, AWS ApiGateway, AWS Cognito, AWS DynamoDB',
     description: 'Microservice to handle login across all applications. Built to allow multiple forms of login including: email/pw, SSO (Facebook, Google, Active Directory), and SMS. Any application that needed to have users logged in would utilize this microservice.',
     iconClass: 'fab fa-aws projectIcon',
@@ -82,7 +74,7 @@ const projects = [
 }, {
     link: '',
     date: 'May 2020',
-    title: 'Syngenta Notifications API',
+    title: 'Enogen Notifications API (with Syngenta)',
     stack: 'NodeJS, AWS Lambda, AWS ApiGateway, AWS SES, Twilio, AWS SQS, AWS DynamoDB',
     description: 'Microservice for in-house use to deliver notifications using email or sms message.',
     iconClass: 'fab fa-aws projectIcon',
@@ -117,7 +109,7 @@ const projects = [
     date: '2018-2019',
     title: 'FCB Vita',
     stack: 'GraphQL, Prisma, NodeJS, ReactJS, AWS (EC2, ECS, SQS, SNS, Rekognition), Azure (Cognitive Services), Google Cloud Platform (Kubernetes, Storage, Vision) Docker',
-    description: 'FCB Vita is a flagship product that sends media through an array of API services to gather metadata and annotation data frame by frame. I was able to develop most of the backend services that this product uses and build the main API in which all services use to operate.',
+    description: 'Collection of small independent services that analyzed, tagged and retrieved metadata for an array of different media types using various intelligent machine learning API\'s such as: Google, AWS and Microsoft (Computer Vision). Set up an automated CICD pipeline for all of our services, and acted as the main orchestrator in managaing and maintaining the collection. I was also responsible for developing any new features and working closely with front-end teams to build out an front-facing website. On top of the ETL process we had to collect data, I built a GraphQL API on top of it that would allow our front-end team to communicate with it securely. I also built the authentication system, using GraphQL and JWT tokens.',
     iconClass: 'fab fa-js-square projectIcon',
     iconColor: 'rgb(135,206,250)'
 },
