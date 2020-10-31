@@ -26,7 +26,7 @@ const projects = [
 },{
     link: '/Enogen.pdf',
     date: 'January 2020 - Present',
-    title: 'Enogen (With Syngenta)',
+    title: 'Enogen Initiative (with Syngenta)',
     stack: 'NodeJS, AWS Lambda, AWS ApiGateway, AWS SQS, AWS SNS, AWS DynamoDB',
     description: 'Built a series of microservices which services multiple applications interacting with modularized api\'s. This was a product being used by a multitude of our teams and is involved with millions of dollars of transactions a year.',
     iconClass: 'fab fa-aws projectIcon',
@@ -90,7 +90,7 @@ const projects = [
 }, {
     link: '/AgriedgeAppArchitecture.pdf',
     date: 'July 2019 - Feburary 2020',
-    title: 'Agriedge (Back End, With Syngenta)',
+    title: 'Agriedge (Back End, with Syngenta)',
     stack: 'NodeJS, AWS Lambda, AWS ApiGateway, AWS RDS, Serverless Framework.',
     description: 'Agriedge Calculator Tool was a tool designed to help sales reps and growers figure out how to get the most rebate out of their purchases, designed specifically to look at soil conditions, weather patterns..etc to recommend the best product, which then would give them a better rebate.',
     iconClass: 'fab fa-aws projectIcon',
@@ -98,7 +98,7 @@ const projects = [
 }, {
     link: '/Argiedge2.png',
     date: 'July 2019 - Feburary 2020',
-    title: 'Agriedge (Front End, With Syngenta)',
+    title: 'Agriedge (Front End, with Syngenta)',
     stack: 'ReactJS, AWS S3, AWS Cloudfront, CSS, HTML.',
     description: 'Agriedge Calculator Tool was a tool designed to help sales reps and growers figure out how to get the most rebate out of their purchases, designed specifically to look at soil conditions, weather patterns..etc to recommend the best product, which then would give them a better rebate.',
     iconClass: 'fab fa-react projectIcon',
