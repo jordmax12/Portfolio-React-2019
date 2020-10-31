@@ -10,7 +10,7 @@ const projects = [
 },{
         link: 'https://www.npmjs.com/package/@syngenta-digital/dta',
         date: '2020',
-        title: 'Syngenta Database Driver Adapter (*contributions)',
+        title: 'Syngenta Database Driver Adapter',
         stack: 'NodeJS, Neo4J, DynamoDB, MySQL, Postgres',
         description: 'This package was originally built as a multi-engine database driver for dynamodb, neo4j, mysql and postgres for use of our internal teams. We open sourced this package for public consumption.',
         iconClass: 'fab fa-npm projectIcon',
@@ -24,7 +24,7 @@ const projects = [
         iconClass: 'fab fa-npm projectIcon',
         iconColor: 'rgb(204,53,52)'
 },{
-    link: '/Enogen.pdf',
+    link: '/EnogenArchitecture.pdf',
     date: 'January 2020 - Present',
     title: 'Enogen Initiative (with Syngenta)',
     stack: 'NodeJS, AWS Lambda, AWS ApiGateway, AWS SQS, AWS SNS, AWS DynamoDB',
