@@ -1,5 +1,14 @@
 const projects = [
 {
+    link: 'https://www.npmjs.com/package/@npmpackageschicago/simple-fs',
+    date: 'October 2020',
+    title: 'Simple-FS',
+    stack: 'NPM, NodeJS',
+    description: 'Just a simple fs repo that helps using the fs system with promises and more functionality. Meant to be built upon over time.',
+    iconClass: 'fab fa-npm projectIcon',
+    iconColor: 'rgb(204,53,52)'
+},
+{
     link: 'https://www.npmjs.com/package/@syngenta-digital/generator-serverless',
     date: 'September/October 2020',
     title: 'Serverless Generator CLI Tool (v2)',
