@@ -13,7 +13,7 @@ const projects = [
     date: 'September/October 2020',
     title: 'Serverless Generator CLI Tool',
     stack: 'NPM, Serverless Framework',
-    description: 'This project was originally built as a CLI tool for all of our internal engineers from all teams across the globe to use. We also decided to open-source this generator for public use as well. Currently supports: AWS Lambda, ApiGateway, S3, SNS, SQS, Elasticsearch, Dynamodb, RDS (Postgres & Mysql)',
+    description: 'This project was originally built as a CLI tool for all of our internal engineers from all teams across the globe to use. We also decided to open-source this generator for public use as well.\n\nCurrently supports: AWS Lambda, ApiGateway, S3, SNS, SQS, Elasticsearch, Dynamodb, RDS (Postgres & Mysql)',
     iconClass: 'fab fa-npm projectIcon',
     iconColor: 'rgb(204,53,52)'
 },{
