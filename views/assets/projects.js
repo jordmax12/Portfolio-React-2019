@@ -9,9 +9,9 @@ const projects = [
     iconColor: 'rgb(204,53,52)'
 },
 {
-    link: 'https://www.npmjs.com/package/@syngenta-digital/generator-serverless',
+    link: 'https://www.npmjs.com/package/@npmpackageschicago/serverless-generator',
     date: 'September/October 2020',
-    title: 'Serverless Generator CLI Tool (v2)',
+    title: 'Serverless Generator CLI Tool',
     stack: 'NPM, Yeoman, AWS Lambda, AWS ApiGateway, AWS S3, AWS SNS, AWS SQS, AWS Elasticsearch, AWS Dynamodb, AWS RDS (Postgres & Mysql)',
     description: 'This project was originally built as a CLI tool for all of our internal engineers from all teams across the globe to use. We also decided to open-source this generator for public use as well.',
     iconClass: 'fab fa-npm projectIcon',
