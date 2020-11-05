@@ -25,7 +25,7 @@ const projects = [
     iconClass: 'fab fa-npm projectIcon',
     iconColor: 'rgb(204,53,52)'
 },{
-    link: 'https://documentation.syndpe.com/',
+    link: 'https://documentation.syngenta-digital.com/',
     date: 'September 2020',
     title: 'Syngenta Documentation (Front-End, Back-End)',
     stack: 'NPM, AWS Lambda, AWS ApiGateway, AWS S3, CircleCI',
