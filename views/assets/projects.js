@@ -172,7 +172,7 @@ const projects = [
     date: 'November 2018',
     title: 'Infusion Squad (with FCB)',
     stack: 'Alexa Voice Services, NodeJS, Azure Serverless Functions, DynamoDB',
-    description: 'Utilizing the ESEA api, I made a Discord bot for a friend who had a Discord server of 1,000+ users daily. They used this server to set up scrims and matches in an online game called Counter-Strike. This Discord bot authenticated users and assigned them roles and rights depending on their rank on ESEA.',
+    description: 'Interactive Alexa app to help the Hemophilia community, specifically children. It provides a way to interact and obtain information for patients and their care givers about their existing condition and the overall infusion process. My first Alexa app published on the Alexa store.',
     iconClass: 'fab fa-js-square projectIcon',
     iconColor: 'rgb(135,206,250)'
 },
