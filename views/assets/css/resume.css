@@ -11,29 +11,29 @@
     text-align: center;
 }
 
-.social-container {
+.social-containert {
     padding-bottom: 20px;
     padding-top: 20px;
     text-align: center;
 }
 
-.social {
+.socialt {
     padding: 0;
 }
 
-.social li {
+.socialt li {
     display: inline-block;
     margin-right: 2px;
     text-align: center;
     padding: 0px 10px;
 }
 
-.social li i {
+.socialt li i {
     line-height: 1;
     color: black;
 }
 
-.social li i:hover {
+.socialt li i:hover {
     color: #B22222;
 }
 

@@ -13,7 +13,7 @@ class Header extends React.Component {
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/resume">Resume</Nav.Link>
                         <Nav.Link href="/timeline">Timeline</Nav.Link>
-                        <Nav.Link href="/contact">Contact</Nav.Link>
+                        {/* <Nav.Link href="/contact">Contact</Nav.Link> */}
                         <a href="https://github.com/jordmax12/Portfolio-React-2019" target="__blank" className="nav-link">View in Github</a>
                     </Nav>
                 </Navbar.Collapse>

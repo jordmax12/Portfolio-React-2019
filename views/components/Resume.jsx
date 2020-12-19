@@ -14,11 +14,12 @@ class Resume extends React.Component {
                     <Grid item md={3}>
                         <div className="resume-me">
                             <img className="me-image" src="./jordan.jpg" alt="Jordan" />
-                            <div className="social-container">
-                                <ul className="social">
+                            <div className="social-containert">
+                                <ul className="socialt">
                                     <li><a target="_blank" href="https://www.github.com/jordmax12"><i className="fab fa-github fa-2x"></i></a></li>
                                     <li><a target="_blank" href="https://linkedin.com/pub/jordan-max/87/59b/b45/"><i className="fab fa-linkedin fa-2x"></i></a></li>
                                 </ul>
+                                <p style={{ fontSize: '14px' }}>Multi-disciplined full stack polyglot developer specializing in building serverless full-stack API based web applications and re-usable platform level tools/packages/SDK/components.</p>
                             </div>
                         </div>
                     </Grid>
@@ -50,16 +51,28 @@ class Resume extends React.Component {
                                                                             style={{ width: '50px', height: '50px' }} />
                                                                     </div>
                                                                     <div className="resumeItem" style={{ float: 'left' }}>
-                                                                        <h4>Software & Dev Ops Engineer – Syngenta </h4>
+                                                                        <h4>Full Stack Software Engineer – Syngenta </h4>
                                                                         <h6><i className="icon-calendar"></i>July 2019 - Present</h6>
                                                                     </div>
                                                                 </div>
                                                                 <div>
                                                                     <ul>
-                                                                        <li className="lst-disc w100 floatL">Helped facilitate the development and maintenance of AWS Codebuild and CircleCI pipelines, using the Serverless Framework and cloudformation templates for infrastructure as code.</li>
-                                                                        <li className="lst-disc w100 floatL">Built a plethora of microservices using AWS Lambda functions, api gateways and built seamless external data integrations (salesforce, and other in house API's) utilizing SQS/SNS with lambda triggers via publisher/subscriber design pattern. These microservices were built in a modular fashion and allow for multiple applications to be using them, opposed to API's being tailored for one application, by utilizing OpenAPI and schema validation on destructive (create, update, delete) API calls for both incoming requests and outgoing responses.</li>
+                                                                        <li className="lst-disc w100 floatL">Helped facilitate the development and maintenance of AWS Codebuild and CircleCI pipelines, using the Serverless framework and cloudformation templates for infrastructure as code.</li>
+                                                                        <li className="lst-disc w100 floatL">Built many API's using the Serverless Framework, AWS Lambda functions and ApiGateway. These were built in a modular fashion and allow for multiple applications to be using them across many other projects. Opposed to API's being tailored for one application, by utilizing OpenAPI and schema validation on destructive (create, update, delete) API calls for both incoming requests and outgoing responses.</li>
                                                                         <li className="lst-disc w100 floatL">Primary focusing on building re-usable API's, packages and SDK's using nodejs (on occassion python and other languages for fun). Built a front-end private npm package to facilitate as a UI-kit for our front-end teams to build and maintain re-usable react components, authentication system using AWS Cognito and a number of federated identities for SSO, notification system using Twilio and AWS SES, and helped develop normalized database drivers for technologies such as: Neo4J, DynamoDB, and MySQL.</li>
-                                                                        <li className="lst-disc w100 floatL">One of the main DevOps support lines for our entire dev team of 20+ engineers (locally), and helping mentor our junior developers/interns so they can grow and become rockstar developers through pair programming, PR's and "lunch and learns".</li>
+                                                                        <li className="lst-disc w100 floatL">Involved with key architecture decisions for projects and regularly proposes infrastructure design solutions given requirements from stakeholders.</li>
+                                                                        <li className="lst-disc w100 floatL">Primarily focusing on building re-usable API's, packages and SDK's using nodejs and sometimes python:</li>
+                                                                            <ul>
+                                                                                <li className="lst-disc w100 floatL">Front-end private npm package to facilitate as a UI-kit for our front-end teams to build and maintain re-usable react components.</li>
+                                                                                <li className="lst-disc w100 floatL">Authentication system using AWS Cognito and a number of federated identities for SSO.</li>
+                                                                                <li className="lst-disc w100 floatL">Notification system using Twilio and AWS SES.</li>
+                                                                                <li className="lst-disc w100 floatL">Created a bash script that ran with our CircleCI build to automate OpenAPI documentation for all of our API’s.</li>
+                                                                                <li className="lst-disc w100 floatL">Helped develop normalized database drivers for technologies such as: Neo4J, DynamoDB, and MySQL.</li>
+                                                                                <li className="lst-disc w100 floatL">And more!</li>
+                                                                            </ul>
+
+                                                                        <li className="lst-disc w100 floatL">Primarily focusing on building re-usable API's, packages and SDK's using nodejs and sometimes python:</li>
+                                                                        <li className="lst-disc w100 floatL">Technologies used: <b>Serverless Framework, NodeJS, Python, Neo4J Graph DB, AWS SQS, SES, SNS, Lambda, DynamoDB, Cognito, Cloudwatch, Cloudfront, Cloudformation, Route 53, ApiGateway, RDS MySQL, OpenAPI + more.</b></li>
                                                                     </ul>
                                                                 </div>
 
@@ -71,7 +84,7 @@ class Resume extends React.Component {
                                                                             style={{ width: '50px', height: '50px' }} />
                                                                     </div>
                                                                     <div className="resumeItem" style={{ float: 'left' }}>
-                                                                        <h4>Software Engineer – FCB Chicago </h4>
+                                                                        <h4>Full Stack Software Engineer – FCB Chicago </h4>
                                                                         <h6><i className="icon-calendar"></i>July 2017 - July 2019</h6>
                                                                     </div>
                                                                 </div>
@@ -89,9 +102,9 @@ class Resume extends React.Component {
                                                                         <li className="lst-disc w100 floatL">Regularly works well with new or unknown programming languages (or
                                                                         frameworks) while excelling at adapting quickly to the differences in
                                                    syntax within tight deadlines.</li>
-                                                                        <li className="lst-disc w100 floatL">Mostly used technologies: GraphQL, NodeJS/Express, ES6 Javascript,
+                                                                        <li className="lst-disc w100 floatL">Technologies used: <b>GraphQL, NodeJS/Express, ES6 Javascript,
                                                                         ReactJS, KeystoneJS, Docker, AWS (ECS, EC2 Load Balancers, Route53,
-                                                   CodePipeline/CodeBuild, SES/SNS/SQS, CodeCommit, IAM, S3 and more), Alexa</li>
+                                                   CodePipeline/CodeBuild, SES/SNS/SQS, CodeCommit, IAM, S3 and more), Alexa</b></li>
                                                                     </ul>
                                                                 </div>
 
@@ -104,7 +117,7 @@ class Resume extends React.Component {
                                                                             style={{ width: "50px", height: "50px" }} />
                                                                     </div>
                                                                     <div className="resumeItem" style={{ float: 'left' }}>
-                                                                        <h4>Software Engineer – Newser </h4>
+                                                                        <h4>Full Stack Software Engineer – Newser </h4>
                                                                         <h6><i className="icon-calendar"></i>May 2016 - Jun 2017</h6>
                                                                     </div>
                                                                 </div>
@@ -113,7 +126,7 @@ class Resume extends React.Component {
                                                                     <li className="lst-disc w100 floatL">Updated, Optimized and fixed mobile app deficiencies.</li>
                                                                     <li className="lst-disc w100 floatL">Created additional revenue via mobile application</li>
                                                                     <li className="lst-disc w100 floatL">Optimizing old code to newer architecture</li>
-                                                                    <li className="lst-disc w100 floatL">Technologies used: ASP.NET 4.6, MSQL, Xamarin, Azure, TFS, jQuery, HTML5/CSS</li>
+                                                                    <li className="lst-disc w100 floatL">Technologies used: <b>ASP.NET 4.6, MSQL, Xamarin, Azure, TFS, jQuery, HTML5/CSS</b></li>
                                                                 </ul>
                                                             </div>
                                                             <div className="exp">
@@ -123,7 +136,7 @@ class Resume extends React.Component {
                                                                             style={{ width: "50px", height: "50px" }} />
                                                                     </div>
                                                                     <div className="resumeItem" style={{ float: 'left' }}>
-                                                                        <h4>Software Engineer – NextCrew, LLC </h4>
+                                                                        <h4>Full Stack Software Engineer – NextCrew, LLC </h4>
                                                                         <h6><i className="icon-calendar"></i>Feb 2015 - May 2016</h6>
                                                                     </div>
                                                                 </div>
@@ -131,7 +144,7 @@ class Resume extends React.Component {
                                                                     <li className="lst-disc w100 floatL">Lead mobile engineer - designed developed and deployed a hybrid mobile app using Cordova</li>
                                                                     <li className="lst-disc w100 floatL">Lead an .NET project which connected Quickbooks Online endpoints to successfully integrate our software with theirs</li>
                                                                     <li className="lst-disc w100 floatL">Lead a project that moved our front end to a updated and modern UI framework (Semantic UI) as well as a Javascript framework (RactiveJS)</li>
-                                                                    <li className="lst-disc w100 floatL">Technologies Used: ASP.NET, Cordova, MSQL, TFS, RactiveJS, Semantic UI, Jira, Xcode 9</li>
+                                                                    <li className="lst-disc w100 floatL">Technologies Used: <b>ASP.NET, Cordova, MSQL, TFS, RactiveJS, Semantic UI, Jira, Xcode 9</b></li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -191,7 +204,7 @@ class Resume extends React.Component {
                                             </div>
                                         </div>
                                         <div className="mt25 tac">
-                                            <a className="but opc-1 ico" href="/JordanMaxEngineer-2020.pdf"
+                                            <a className="but opc-1 ico" href="/JordanMaxEngineer-2021.pdf"
                                                 target="_blank"><i className="fa fa-download mr10" aria-hidden="true"></i>Download my cv</a>
                                         </div>
                                     </div>
