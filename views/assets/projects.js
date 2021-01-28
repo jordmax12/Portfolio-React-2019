@@ -1,5 +1,14 @@
 const projects = [
 {
+    link: '/databus.pdf',
+    date: 'Novemer 2020 - February 2021',
+    title: 'Databus ETL Pipeline',
+    stack: 'Python, AWS Glue, AWS Athena, AWS S3, AWS SQS, AWS ApiGateway, AWS Lambda, AWS DynamoDB',
+    description: 'ETL pipeline built with python. This project was fun because I\'ve never used Python before so this was a learning experience, but in a fun way. Also got to experiment with new AWS services such as Glue and Athena to query raw S3 data.',
+    iconClass: 'fab fa-python projectIcon',
+    iconColor: 'rgb(55,118,171)'
+},
+{
     link: 'https://www.npmjs.com/package/@npmpackageschicago/simple-fs',
     date: 'October 2020',
     title: 'Simple-FS',
