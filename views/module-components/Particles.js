@@ -14,7 +14,7 @@ class ParticlesComponent extends React.Component {
         console.log(this.props);
         return (
             <div>
-                <div style={{ position: 'absolute', top: '0', left: '0', width: '100%' }}>
+                <div style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100vh' }}>
                 <Particles
                     params={{
                         "particles": {
